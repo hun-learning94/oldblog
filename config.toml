@@ -1,0 +1,59 @@
+baseurl = "/"
+title = "Hun Learning"
+languageCode = "en-us"
+paginate = "7" # Number of posts per page
+theme = "mainroad"
+
+
+[Author] # Used in authorbox
+  name = "Kang Gyeonghun"
+  bio = "I study statistics, machine learning, data science or whatever that concerns making inference on infinitie dimension from a limited sample in fintie dimension. This blog is an archive of my journey of study."
+  avatar = "/mypic1.jpg"
+
+[Params]
+  description = "Hun Learng Blog is the archive of my journey of studying statistical inference." # Site description. Used in meta description
+  copyright = "Kang Gyeonghun" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = false # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = true # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  # mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "2006-01-02" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#E1C699" # Override highlight color
+
+[Params.logo]
+  image = "mypic2.jpg" # Logo image. Path relative to "static"
+  title = "Hun Learning" # Logo title, otherwise will use site title
+  subtitle = "In Search Of The Truth Projected Onto A Finite Dimension" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  # Enable widgets in given order
+  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+  # alternatively "ddg-search" can be used, to search via DuckDuckGo
+  # widgets = ["ddg-search", "recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 6 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  facebook = "khoon5276"
+  github = "hun-learning94"
+  email = "khoon5276@gmail.com"
+
+# Custom social links
+[[Params.widgets.social.custom]]
+  title = "Hun Learning Youtube Channel"
+  url = "https://youtube.com/c/hunlearning"
+  #icon = "youtube.png" # Optional. Path relative to "layouts/partials"
