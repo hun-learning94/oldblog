@@ -38,7 +38,7 @@ $$
 $$
 <br>
 
-where the logarithm ensures $h(x,y)=h(x)h(y) \Leftrightarrow p(x,y)=p(x)p(y)$, and the negative sign makes $h(x)\geq 0$. Note that if we use $\log_2$ instead, then $h(x)=-\log_2p(x)$ indicates a number of bits to encode an information in $x$. Data that is less likely (small $p(x)$) requires more bits to encode than more common (high $p(x)$) one.
+where the logarithm ensures $h(x,y)=h(x)+h(y) \Leftrightarrow p(x,y)=p(x)p(y)$, and the negative sign makes $h(x)\geq 0$. Note that if we use $\log_2$ instead, then $h(x)=-\log_2p(x)$ indicates a number of bits to encode an information in $x$. Data that is less likely (small $p(x)$) requires more bits to encode than more common (high $p(x)$) one.
 
 We define an information of a random variable $x$ with a distribution $p(x)$ as the expectation of its information content;
 

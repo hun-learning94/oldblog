@@ -1,7 +1,7 @@
 ---
 # Common-Defined params
 title: "Author"
-date: "2020-01-01T09:10:00+09:00"
+date: "2020-07-11T09:10:00+09:00"
 description: "Example article description"
 categories:
 tags:

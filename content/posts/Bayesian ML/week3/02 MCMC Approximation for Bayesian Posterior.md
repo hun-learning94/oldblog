@@ -42,14 +42,14 @@ widgets: # Enable sidebar widgets in given order per page
 <br>
 
 
-$$
-\begin{align}
-Likelihood\quad& p(D|\theta)\\\\\\
-Prior\;Belief\quad& p(\theta)\\\\\\
-(Evidence \quad& p(D) = \int p(D|\theta)p(\theta) d\theta\;)\\\\\\
-Updated\;Belief \quad &p(\theta|D) = \dfrac{p(D|\theta)p(\theta)}{p(D)}
 
-\end{align}
+$$
+\begin{align*}
+\text{Likelihood}\quad& p(D|\theta)\\\\\\
+\text{Prior Belief}\quad& p(\theta)\\\\\\
+(Evidence \quad& p(D) = \int p(D|\theta)p(\theta) d\theta\;)\\\\\\
+\text{Updated Belief} \quad &p(\theta|D) = \dfrac{p(D|\theta)p(\theta)}{p(D)}
+\end{align*}
 $$
 <br>
 
