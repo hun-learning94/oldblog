@@ -4,12 +4,10 @@ title: "(MCMC) Discrete-Time Markov Chain with Finite State Space"
 date: "2020-08-03T06:00:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Statistics"
-  - "Probability"
-  - "Bayesian"
   - "Markov Chain"
+  - "Stochastic Process"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params

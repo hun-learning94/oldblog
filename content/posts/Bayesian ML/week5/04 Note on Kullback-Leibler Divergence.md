@@ -1,18 +1,17 @@
 ---
 # Common-Defined params
 title: "Note on Kullback-Leibler Divergence"
-date: "2020-08-10T11:00:00+09:00"
+date: "2020-08-11T11:00:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Pattern Recognition and Machine Learning"
-  - "Kullback-Leibler Divergence"
+  - "KL Divergence"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params
 #thumbnail: "cover/PRML.jpg" # Thumbnail image
-lead: "How much of a loss to bear when you approximate" # Lead text
+lead: "How much of a loss (i.e. additional amount of coding) to bear when you approximate" # Lead text
 comments: false # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
@@ -46,7 +45,7 @@ We define an information of a random variable $x$ with a distribution $p(x)$ as 
 
 
 $$
-\text{information content of random variable $x$:}\quad H(x) = E(h(x))= -\sum_xp(x)\log p(x)
+\text{information content of r.v. $x$:}\quad H(x) = E(h(x))= -\sum_xp(x)\log p(x)
 $$
 <br>
 

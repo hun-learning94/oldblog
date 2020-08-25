@@ -4,11 +4,9 @@ title: "Bayesian Approach: 하나의 데이터, 임의의 모수"
 date: "2020-07-20T05:30:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Statistics"
-  - "Bayesian"
-  - "Probability"
+  - "Bayes Rule"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params

@@ -6,9 +6,7 @@ description: "Example article description"
 categories:
   - "Statistics"
 tags:
-  - "Pattern Recognition and Machine Learning"
   - "Naive Bayes Classifier"
-  - "LDA"
   - "Logistic Regression"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
@@ -498,15 +496,15 @@ $$
 1. 전체 Training set에 대해 Cost를 구한다. $L(\mathbf{p}, \mathbf{t}) = - \sum_i^N (t_i\log p_i + (1-t_i)\log (1-p)i)$
 
 1. 다음과 같이 계수를 업데이트한다. 이 과정을 epochs 동안 계속 반복해 loss가 줄어드는지 확인
-  <br>
-  <br>
+    <br>
+    <br>
 
-  $$
+$$
   \begin{align}
   b_{new} &= b_{old} - \eta \sum_i^N (p_i-t_i)\\\\\\
   \mathbf{w}_{new} &= \mathbf{w}_{old} - \eta \mathbf{X}^T(\mathbf{p} - \mathbf{t})
   \end{align}
-  $$
+$$
   <br>
 
 

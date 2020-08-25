@@ -8,7 +8,6 @@ categories:
 tags:
   - "Ridge"
   - "Lasso"
-  - "Bayeisan"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params

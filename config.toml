@@ -3,6 +3,7 @@ title = "Hun Learning"
 languageCode = "en-us"
 paginate = "7" # Number of posts per page
 theme = "mainroad"
+disqusShortname = "hun-learning94"
 
 
 [Author] # Used in authorbox

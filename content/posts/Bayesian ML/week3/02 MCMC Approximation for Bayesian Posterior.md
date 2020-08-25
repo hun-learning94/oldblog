@@ -4,12 +4,12 @@ title: "(MCMC) 베이지안 사후분포 근사를 위한 MCMC 방법론"
 date: "2020-08-03T07:00:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Statistics"
-  - "Probability"
-  - "Bayesian"
   - "MCMC"
+  - "Gibbs Sampling"
+  - "Metropolis Hastings"
+  - "Posterior Approximation"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params

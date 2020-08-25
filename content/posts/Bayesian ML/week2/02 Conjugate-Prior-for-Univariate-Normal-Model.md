@@ -4,9 +4,8 @@ title: "Conjugate Prior for Univariate - Normal Model"
 date: "2020-07-20T06:05:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Bayesian"
   - "Conjugacy"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 

@@ -4,12 +4,11 @@ title: "Mixtures of Gaussians and EM algorithm"
 date: "2020-08-10T07:00:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
   - "Clustering"
   - "Gaussian Mixtures"
   - "EM algorithm"
-  - "Pattern Recognition and Machine Learning"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params
@@ -209,12 +208,13 @@ To recap, in GMM, our objective is to maximize the likelihood function w.r.t. $\
 
 
 $$
-\begin{align}
-\arg\max p(\mathbf{X} \mid \boldsymbol{\pi, \mu, \Sigma})&=\prod_{n=1}^N\Bigg(\sum_{k=1}^K \pi_k N(\mathbf{x_n}\mid \boldsymbol{\mu_k, \Sigma_k})\Bigg)\\\\\\
-
-\arg\max \log p(\mathbf{X} \mid \boldsymbol{\pi, \mu, \Sigma})&=\sum_{n=1}^N\ln\Bigg(\sum_{k=1}^K \pi_k N(\mathbf{x_n}\mid \boldsymbol{\mu_k, \Sigma_k})\Bigg)
-\end{align}
+\begin{align*}
+\arg\max p(\mathbf{X} \mid \boldsymbol{\pi, \mu, \Sigma})=\prod_{n=1}^N\Big(\sum_{k=1}^K \pi_k N(\mathbf{x_n}\mid \boldsymbol{\mu_k, \Sigma_k})\Big)\\\\\\
+\arg\max \log p(\mathbf{X} \mid \boldsymbol{\pi, \mu, \Sigma})=\sum_{n=1}^N\ln\Big(\sum_{k=1}^K \pi_k N(\mathbf{x_n}\mid \boldsymbol{\mu_k, \Sigma_k})\Big)
+\end{align*}
 $$
+
+
 <br>But this likelihood is intractable. Suppose instead that we are given a $N \times K$ matrix of hidden variables $\mathbf{Z}$ where $z_{nk}=1$ indicates $\mathbf{x_n}$ belongs to $k$th Gaussian. That is, we have a complete data $\mathbf{X,Z}$. Then finding MLE of the joint distribution is fairly straightforward for GMM.
 
 <br>

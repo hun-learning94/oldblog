@@ -6,8 +6,6 @@ description: "Example article description"
 categories:
   - "Statistics"
 tags:
-  - "Statistics"
-  - "Probability"
   - "Frequentist"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 

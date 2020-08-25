@@ -4,11 +4,9 @@ title: "Bayesian Modelling by Zoubin Ghahramani, MLSS2012, Univ of Cambridge"
 date: "2020-07-31T09:10:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Bayesian"
-  - "BIC"
-  - "Laplace Approximation"
+  - "Posterior Approximation"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params

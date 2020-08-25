@@ -4,12 +4,11 @@ title: "EM Algorithm for Latent Variable Models"
 date: "2020-08-10T10:00:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
   - "Clustering"
   - "EM algorithm"
   - "Latent Variable"
-  - "Pattern Recognition and Machine Learning"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params

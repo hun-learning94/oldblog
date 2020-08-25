@@ -4,12 +4,9 @@ title: "Bayesian Hierarchical Modeling and its Applications"
 date: "2020-08-03T08:00:00+09:00"
 description: "Example article description"
 categories:
-  - "Bayesian Machine Learning"
+  - "Probabilistic Machine Learning"
 tags:
-  - "Statistics"
-  - "Probability"
-  - "Bayesian"
-  - "Bayesian Hierarchical"
+  - "Bayesian Hierarchy"
 menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params
