@@ -12,7 +12,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 #thumbnail: "cover/PRML.jpg" # Thumbnail image
 lead: "최적화 수업을 듣지 않고 어디까지 이해할 수 있을까..." # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: true # Enable Table of Contents for specific page

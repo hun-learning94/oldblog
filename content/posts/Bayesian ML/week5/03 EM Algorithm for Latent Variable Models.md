@@ -14,7 +14,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "cover/EM.jpg" # Thumbnail image
 lead: "At least you get a pretty tight lower bound" # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: false # Enable Table of Contents for specific page

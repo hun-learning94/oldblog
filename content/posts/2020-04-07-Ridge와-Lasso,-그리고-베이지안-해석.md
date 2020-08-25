@@ -13,7 +13,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "/cover/PRML.jpg" # Thumbnail image
 lead: "선형회귀 모델에서 과적화를 막기 위해 인위적으로 도입하는 정규화, 베이지안으로 해석하면 Maximum a Posteriori" # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: false # Enable Table of Contents for specific page

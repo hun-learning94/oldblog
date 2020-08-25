@@ -15,7 +15,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "cover/mcmc.jpg" # Thumbnail image
 lead: "정확한 높이는 몰라도 높고 낮음을 비교할 수는 있다면" # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: true # Enable Table of Contents for specific page

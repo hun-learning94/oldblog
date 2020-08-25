@@ -12,7 +12,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "cover/classical.jpg" # Thumbnail image
 lead: "가장 좋은 추정량 같은 것은 없다." # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: true # Enable Table of Contents for specific page

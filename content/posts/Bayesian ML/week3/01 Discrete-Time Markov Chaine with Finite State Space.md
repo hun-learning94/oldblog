@@ -13,7 +13,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "cover/markovchainfrog.jpg" # Thumbnail image
 lead: "MCMC를 배우기 위해 꼭 알아야 하는 마코브 체인, 그 중에서도 discrete time이며 상태가 finite한 경우만 살펴보면 충분하다." # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: true # Enable Table of Contents for specific page

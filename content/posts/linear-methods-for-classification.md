@@ -12,8 +12,8 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 
 # Theme-Defined params
 thumbnail: "cover/PRML.jpg" # Thumbnail image
-lead: "학교 학회에서 발표했던 내용들" # Lead text
-comments: false # Enable Disqus comments for specific page
+lead: "Linear decision boundary를 그리는 generative한 방법과 discriminative한 접근" # Lead text
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: true # Enable Table of Contents for specific page

@@ -12,7 +12,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "/posts/LinearAlgebra/LinAlg/93C5DB1E001.jpeg" # Thumbnail image
 lead: "Singular Value Decomposition explicitly shows what a matrix does; change the basis, do the linear transform, and change the basis again" # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: false # Enable Table of Contents for specific page

@@ -12,7 +12,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "/posts/vectormatrixderiv/6133858E01.jpeg" # Thumbnail image
 lead: "When you got tired of mires of summation symbols, vector notation comes to rescue" # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: false # Enable Table of Contents for specific page

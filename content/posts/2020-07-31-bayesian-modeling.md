@@ -12,7 +12,7 @@ menu: side # Optional, add page to a menu. Options: main, side, footer
 # Theme-Defined params
 thumbnail: "/posts/mlss2012_ghahramani_bayesian_modelling/BayesModelLecture.JPG" # Thumbnail image
 lead: "2012 영국 케임브리지 대학교 여름방학 머신러닝 강의 요약" # Lead text
-comments: false # Enable Disqus comments for specific page
+comments: true # Enable Disqus comments for specific page
 authorbox: true # Enable authorbox for specific page
 pager: true # Enable pager navigation (prev/next) for specific page
 toc: false # Enable Table of Contents for specific page
