@@ -4,7 +4,7 @@ title: "Rtools를 윈도우 환경변수 PATH에 추가하는 방법"
 date: "2020-09-06T10:00:00+09:00"
 description: "How to add Rtools to windows PATH environment variable?"
 categories:
-  - "R"
+  - "Rcpp"
 tags:
   - "Rcpp"
 menu: side # Optional, add page to a menu. Options: main, side, footer
