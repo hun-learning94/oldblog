@@ -97,6 +97,8 @@ $$
 This means that the prior must contain a term similiar $\exp(c_1(\theta-c_2)^2)$, so the normal prior for $\theta$ becomes a natural choice. Let $\theta|\sigma^2 \sim N(\mu_0, \tau_0^2)$ and we have
 
 <br>
+
+
 $$
 \begin{align}
 p(\theta|\mathbf{D}, \sigma^2) &\propto p(\theta|\sigma^2)p(\mathbf{D}|\theta, \sigma^2)\\\\\\
@@ -220,7 +222,7 @@ ggplot(df_long, aes(x=theta, y=value, group=dist, color=dist))+
 
 ```
 
-![Rplot04](\image\Rplot04.png)
+![Rplot04](/image/Rplot04.png)
 
 ## <br>Normal Model (unknown variance, conditional prior)
 
@@ -336,6 +338,8 @@ Mighty daunting formula but we can attempt to interpret the result as follows
 In summary,
 
 <br>
+
+
 $$
 \begin{align}
 \text{Joint prior and the likelihood}\quad 
@@ -497,7 +501,7 @@ ggplot(df, aes(x=theta, y=sigma2, z=density))+
 
 ```
 
-![Rplot05](\image\Rplot05.png)
+![Rplot05](/image/Rplot05.png)
 
 
 ## <br>Normal Model (Independent prior)
@@ -587,7 +591,7 @@ ggplot(PHI_df, aes(x=theta, y=sigma))+
 
 ```
 
-![Rplot06](\image\Rplot06.png)
+![Rplot06](/image/Rplot06.png)
 
 What happened under the hood is
 
@@ -611,7 +615,7 @@ ggplot(phase, aes(x= theta, y= sigma))+
   facet_wrap(~steps)
 ```
 
-![Rplot07](\image\Rplot07.png)
+![Rplot07](/image/Rplot07.png)
 
 ## <br>Remark: Is normal sampling assumption appropriate?
 
@@ -636,7 +640,7 @@ df = data.frame(height = output %*% beta)
 ggplot(df, aes(x=height)) + geom_histogram(color='black',fill='grey', bins=30)
 ```
 
-![Rplot08](\image\Rplot08.png)
+![Rplot08](/image/Rplot08.png)
 
 ### <br>References
 
