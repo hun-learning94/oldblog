@@ -288,6 +288,8 @@ $$
 In summary, we have
 
 <br>
+
+
 $$
 \begin{align}
 \sigma^2 &\sim inv\Gamma(v_0/2, v_0\sigma_0^2/2)\\\\\\
