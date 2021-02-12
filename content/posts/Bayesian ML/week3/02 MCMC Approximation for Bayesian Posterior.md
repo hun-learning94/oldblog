@@ -155,7 +155,7 @@ $$
 
 <br>
 
-예컨대 임의의 초기치로 주어진 현재 상태가 $i$라고 해보자. 이때 위의 transtion probability에 따라 다른 sample 다음 상태 $j$를 추출하는 것이다. 하지만 여기서 끝이 아니다. 우리의 목적은 $\pi_i p_{ij} =  \pi_j p_{ji}$를 만족하는 transition probability를 만드는 것이며, 이를 위해서는 하나의 조건이 더 필요하다. 예컨대 생성된 다음 상태가 $j$일때, $\alpha_{i,j}$의 확률로 그 상태를 받아들인다고 하자. 즉 **일종의 Accecpt Probability를 인위적으로 만드는 것**이다. 이렇게 해서 만들어진 transiton probability를 쓰면 다음과 같다.
+예컨대 임의의 초기치로 주어진 현재 상태가 $[Math Processing Error]i$라고 해보자. 이때 위의 transtion probability에 따라 다른 sample 다음 상태 $[Math Processing Error]j$를 추출하는 것이다. 하지만 여기서 끝이 아니다. 우리의 목적은 $[Math Processing Error]\pi_i p_{ij} =  \pi_j p_{ji}$를 만족하는 transition probability를 만드는 것이며, 이를 위해서는 하나의 조건이 더 필요하다. 예컨대 생성된 다음 상태가 $[Math Processing Error]j$일때, $[Math Processing Error]\alpha_{i,j}$의 확률로 그 상태를 받아들인다고 하자. 즉 일종의 Accecpt Probability를 인위적으로 만드는 것이다. 이렇게 해서 만들어진 transiton probability를 쓰면 다음과 같다.
 
 <br>
 
