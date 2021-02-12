@@ -47,7 +47,7 @@ $$
 \begin{align*}
 \text{Likelihood}\quad& p(D|\theta)\\\\\\
 \text{Prior Belief}\quad& p(\theta)\\\\\\
-(Evidence \quad& p(D) = \int p(D|\theta)p(\theta) d\theta\;)\\\\\\
+(Evidence \quad& p(D) = \int p(D|\theta)p(\theta) d\theta\\;)\\\\\\
 \text{Updated Belief} \quad &p(\theta|D) = \dfrac{p(D|\theta)p(\theta)}{p(D)}
 \end{align*}
 $$
@@ -55,7 +55,7 @@ $$
 
 베이지안 데이터 분석의 필수 요소는 딱 두 가지이다. 먼저 데이터에 대하여 Likelihood 모델을 세우고 (Model Specification), 그 다음 모델의 모수에 대한 불확실성을 확률분포로 특정한다 (Prior Specification). 그렇게 하면 베이즈 정리를 통해 사후분포가 완전히 특정이 되며, 베이즈 추론은 끝난다. 다만 문제는 특정이 된 사후분포의 형태인데, 분모에 있는 Evidence를 구하기 위해서는 데이터의 모델을 모델의 모수에 대한 사전 가중치로 적분해야 하지만, prior-posterior conjucay가 없을 경우 대개 적분이 불가능하다. 때문에 우리는 그 형태를 수치적인 방법으로 근사를 해야한다. 
 
-분포를 근사하는 가장 직관적인 방법은 그 분포를 따르는 샘플을 무수히 많이 생성하여, 그 샘플이 이루는 경험분포를 보는 것이다. 이때 우리가 근사하는 사후분포는 분모인 Evidence를 모르기 때문에 정확한 식은 모르지만, Likelihood와 Prior Belief의 곱에 비례하는 것만큼은 안다. 즉 우리는 확률분포를 어떤 상수배까지 알고 있을 때("upto a multiplicative constant") 이 분포를 따르는 샘플을 생성해야 하는 것이다. 이를 어떻게 해결할 수 있을까?
+분포를 근사하는 가장 직관적인 방법은 그 분포를 따르는 샘플을 무수히 많이 생성하여, 그 샘플이 이루는 경험분포를 보는 것이다. 이때 우리가 근사하는 사후분포는 분모인 Evidence를 모르기 때문에 정확한 식은 모르지만, Likelihood와 Prior Belief의 곱에 비례하는 것만큼은 안다. 즉 우리는 확률분포를 어떤 상수배까지 알고 있을 때("**upto a multiplicative constant**") 이 분포를 따르는 샘플을 생성해야 하는 것이다. 이를 어떻게 해결할 수 있을까?
 
 
 
@@ -70,8 +70,8 @@ $$
 
 $$
 \begin{align}
-Model\;Specification:&\quad D \sim N(\theta, \tilde\sigma^2)\\\\\\
-Prior\;Specication:&\quad \tilde\sigma^2 \sim \Gamma(\nu_0/2, \nu_0\sigma_0^2/2)\\\\\\
+\text{Model Specification:}&\quad D \sim N(\theta, \tilde\sigma^2)\\\\\\
+\text{Prior Specication:}&\quad \tilde\sigma^2 \sim \Gamma(\nu_0/2, \nu_0\sigma_0^2/2)\\\\\\
 &\quad \theta \sim N(\mu_0, \tau_0^2)
 \end{align}
 $$
@@ -106,7 +106,7 @@ MCMC를 직관적으로 이해하는 가장 좋은 방법은 등고선을 예시
 
 ### <br>2-1. 마코브 체인이란?
 
-이 부분은 이전 자료 "Discrete-Time Markov Chain with Finite State Space for MCMC"으로 대체한다. 핵심은 타겟 분포 $p(x)$에 대해서 다음의 detailed balance equation을 만족하는 transiton operator $T(x, x')$을 찾는 것이다.
+이 부분은 이전 자료 "Discrete-Time Markov Chain with Finite State Space for MCMC"으로 대체한다. 핵심은 타겟 분포 $[Math Processing Error]p(x)$에 대해서 다음의 detailed balance equation을 만족하는 transiton operator $[Math Processing Error]T(x, x')$을 찾는 것이다.
 
 <br>
 
@@ -129,7 +129,7 @@ $$
 
 
 $$
-X \sim f(X=j) = C\;b(j)
+X \sim f(X=j) = C\\;b(j)
 $$
 
 <br>
@@ -144,9 +144,9 @@ $$
 \begin{align}
 \text{Proposal probability matrix} \quad Q_{N,N} &= 
 \begin{pmatrix}
-q_{1,1} & q_{1,2} & \cdots & q_{1,N}\\
-q_{2,1} & q_{2,2} & \cdots & q_{2,N}\\
-\vdots & \vdots & \ddots &\vdots\\
+q_{1,1} & q_{1,2} & \cdots & q_{1,N}\\\\\\
+q_{2,1} & q_{2,2} & \cdots & q_{2,N}\\\\\\
+\vdots & \vdots & \ddots &\vdots\\\\\\
 q_{N,1} & q_{N,2} & \cdots & q_{N,N}\\
 \end{pmatrix}\\\\\\
 \text{Proposal proability}\quad q_{i,j}& = p(X_t=j|X_{t-1}=i)
