@@ -777,6 +777,10 @@ finite state space에서 stationary 분포는 유일하지 않을 수 있다. �
 3. stationary 분포도 유일하게 존재한다.
 4. 때문에 stationary 분포를 구하면 그것이 바로 극한분포이다!
 
+> **부연설명**
+>
+> finite state space이며 irreducible하면 마코브 체인을 무한히 돌리며 기록한, 어떤 상태에 체류하는 장기 빈도가 stationary 분포라고 할 수 있는데, 여기닥가 aperiodic하기까지 하다면 장기빈도를 기록할 필요도 없이 $\lim_{n\to \infty}\pi P^n$가 극한분포 자체로 수렴한다고 얘기할 수 있다. 참조: [stochastic-I-MCII.pdf (columbia.edu)](http://www.columbia.edu/~ks20/stochastic-I/stochastic-I-MCII.pdf)
+
 즉 우리는 transition matrix $P$를 무진장 곱하지 않고도 위의 방정식 $\pi P =\pi$을 만족하는 $\pi$만 구하면, 그게 극한 분포라고 확신할 수 있는 것이다. **(누누이 말하지만 이게 가능한 이유는 우리가 finite state space에 irreducible하고 aperiodic한 마코브 체인에 대해서만 말하고 있기 때문이다!)**
 
 이제 우리는 극한분포를 구하기 위해서는 다음의 $r$개의 방정식을 풀면 된다.
@@ -812,7 +816,11 @@ $$
 
 무슨 뜻일까? 
 
-* 처음 초기 분포가 $\pi(0)=\pi$대로 되어있다고 하자. 그러면 $\pi_i p_{ij}$는$i$에서 $j$로 흐르는 확률의 양을, $\pi_jp_{ji}$는 $j$에서 $i$로 흐르는 확률의 양을 의미한다. **Detailed balance란 모든 노드에서 흘러들어오는 확률의 양과 흘러나가는 확률의 양이 같다**는 이야기이다. 이 때문에 이걸 만족하는 마코브 체인을 Reversible하다고 하는 것이다. 
+* 처음 초기 분포가 $\pi(0)=\pi$대로 되어있다고 하자. 그러면 $\pi_i p_{ij}$는$i$에서 $j$로 흐르는 확률의 양을, $\pi_jp_{ji}$는 $j$에서 $i$로 흐르는 확률의 양을 의미한다. 
+
+  **Detailed balance란 모든 노드에서 흘러들어오는 확률의 양과 흘러나가는 확률의 양이 같다는 이야기이다.** 
+
+  이 때문에 이걸 만족하는 마코브 체인을 Reversible하다고 하는 것이다. 
 
 * 이는 $\pi P =\pi$보다 훨씬 더 빡센 조건이다. 당장 방정식의 개수만 봐도 그렇다. $\pi P =\pi$은 $r$개의 방정식으로 이뤄져 있다. 그러나 위의 Detailed Balance 방정식은 $S$의 모든 $i,j$ 쌍에 대해 모두 성립해야 하니 대충 봐도 ${r \choose 2}=\frac{r(r-1)}{2}$개의 방정식이 나온다. 때문에 Stationary 분포가 존재하는 마코브 체인에서 위의 detailed balance equation의 해가 존재하면 그게 바로 stationary distribution임을 알 수 있다. 직접 보이려면, 수식으로 보이면 양 변을 일단 $i$에 대해 합쳐보면 된다. 그러면 $\pi P = \pi$를 만족함을 알 수 있다.
 
@@ -834,15 +842,7 @@ $$
 
 
 
-지금까지의 논의를 종합하자면,
-
-1. Finte state space에서 마코브 체인이 irreducible하고 aperiodic하면 
-   1. 극한분포가 유일하게 존재한다.
-   2. Stationary 분포도 유일하게 존재한다. 
-   3. 때문에 global balance 방정식을 풀면 극한분포를 구할 수 있다.
-2. Detailed balance가 더 강력한 조건이다. Detailed balance 방정식의 해는 global balance의 해이며 곧 극한분포이다.
-
-어째 극한분포 구하는데 2에서 3으로 가면 식이 더 많아지니 굳이 이런 수고를 해야 하나 싶을 것이다. 그러나 우리가 공을 들여서 3을 말한 데에는 이유가 있다. MCMC를 하기 위해서이다.
+극한분포 구하는데 2 (global balance)에서 3(detailed balance)으로 가면 식이 더 많아지니 굳이 이런 수고를 해야 하나 싶을 것이다. 그러나 우리가 공을 들여서 3을 말한 데에는 이유가 있다. MCMC를 하기 위해서이다.
 
 
 
@@ -856,10 +856,12 @@ $$
 
 요컨대, 어떤 분포 $\pi$를 유일한 극한분포로 하는 마코브 체인을 만들기 위해서는, 전환행렬 $P$가 다음의 조건을 만족해야 한다.
 
-> 1. $P$가 정의하는 마코브 체인은 **ergodic(irreducible and aperiodic)**하다. 즉 state space를 골고루 잘 돌아다닌다.
+> 1. $P$가 정의하는 마코브 체인은 **ergodic(irreducible and aperiodic)하다.** 즉 state space를 골고루 잘 돌아다닌다.
 > 2. $P$가 정의하는 마코브 체인의 극한분포는 $\pi$이어야 한다.
 
-2의 조건은 $\pi$에 대하여 detailed balance 방정식을 풀면 "충분히" 만족할 수 있다. 문제는 1인데, 우리는 detailed balance의 해인 $P$가 ergodic함을 보여야 한다. 증명은 보이지 않겠으나, 만일 모든 상태에 대하여 $p_{ij}$와 $\pi_i$ 모두 양수라면, $\pi$를 stationary 분포로 가지는, $P$로 정의된 마코브 체인은 ergodic함이 알려져 있다. 자세히 쓰자면, *(Leo Breiman. The strong law of large numbers for a class of markov chains. The Annals of Mathematical Statistics, 31(3):801–803, 1960)*
+2의 조건은 $\pi$에 대하여 detailed balance 방정식을 풀면 "충분히" 만족할 수 있다. 문제는 1인데, 우리는 detailed balance의 해인 $P$가 ergodic함을 보여야 한다. 증명은 보이지 않겠으나, 만일 모든 상태에 대하여 $p_{ij}$와 $\pi_i$ 모두 양수라면, $\pi$를 stationary 분포로 가지는, $P$로 정의된 마코브 체인은 ergodic함이 알려져 있다. 자세히 쓰자면, 
+
+*(Leo Breiman. The strong law of large numbers for a class of markov chains. The Annals of Mathematical Statistics, 31(3):801–803, 1960)*
 
 
 

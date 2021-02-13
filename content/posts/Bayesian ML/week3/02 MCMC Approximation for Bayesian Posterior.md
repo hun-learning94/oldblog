@@ -106,14 +106,14 @@ MCMC를 직관적으로 이해하는 가장 좋은 방법은 등고선을 예시
 
 ### <br>2-1. 마코브 체인이란?
 
-이 부분은 이전 자료 "Discrete-Time Markov Chain with Finite State Space for MCMC"으로 대체한다. 핵심은 타겟 분포 $[Math Processing Error]p(x)$에 대해서 다음의 detailed balance equation을 만족하는 transiton operator $[Math Processing Error]T(x, x')$을 찾는 것이다.
+이 부분은 이전 자료 "Discrete-Time Markov Chain with Finite State Space for MCMC"으로 대체한다. 핵심은 타겟 분포 $p(x)$에 대해서 다음의 detailed balance equation을 만족하는 transiton operator $T(x, x')$을 찾는 것이다.
 
 <br>
 
 
 
 $$
-p(x)T(x, x') = p(x')T(x',x) \quad ^\forall x, x'\in S\\
+p(x)T(x, x') = p(x')T(x',x) \quad ^\forall x, x'\in S\\\\\\
 \text{equivalently,}\quad\pi_i p_{ij} =  \pi_j p_{ji} \quad ^\forall i,j\in S
 $$
 
@@ -129,7 +129,7 @@ $$
 
 
 $$
-X \sim f(X=j) = C\\;b(j)
+X \sim f(X=j) = C\times b(j)
 $$
 
 <br>
@@ -148,14 +148,16 @@ q_{1,1} & q_{1,2} & \cdots & q_{1,N}\\\\\\
 q_{2,1} & q_{2,2} & \cdots & q_{2,N}\\\\\\
 \vdots & \vdots & \ddots &\vdots\\\\\\
 q_{N,1} & q_{N,2} & \cdots & q_{N,N}\\
-\end{pmatrix}\\\\\\
+\end{pmatrix}
+\\\\\\
+\\\\\\
 \text{Proposal proability}\quad q_{i,j}& = p(X_t=j|X_{t-1}=i)
 \end{align}
 $$
 
 <br>
 
-예컨대 임의의 초기치로 주어진 현재 상태가 $[Math Processing Error]i$라고 해보자. 이때 위의 transtion probability에 따라 다른 sample 다음 상태 $[Math Processing Error]j$를 추출하는 것이다. 하지만 여기서 끝이 아니다. 우리의 목적은 $[Math Processing Error]\pi_i p_{ij} =  \pi_j p_{ji}$를 만족하는 transition probability를 만드는 것이며, 이를 위해서는 하나의 조건이 더 필요하다. 예컨대 생성된 다음 상태가 $[Math Processing Error]j$일때, $[Math Processing Error]\alpha_{i,j}$의 확률로 그 상태를 받아들인다고 하자. 즉 일종의 Accecpt Probability를 인위적으로 만드는 것이다. 이렇게 해서 만들어진 transiton probability를 쓰면 다음과 같다.
+예컨대 임의의 초기치로 주어진 현재 상태가 $i$라고 해보자. 이때 위의 proposal probability에 따라 다른 sample 다음 상태 $j$를 추출하는 것이다. 하지만 여기서 끝이 아니다. 우리의 목적은 $\pi_i p_{ij} =  \pi_j p_{ji}$를 만족하는 transition probability를 만드는 것이며, 이를 위해서는 하나의 조건이 더 필요하다. 예컨대 생성된 다음 상태가 $j$일때, $\alpha_{i,j}$의 확률로 그 상태를 받아들인다고 하자. 즉 일종의 Accecpt Probability를 인위적으로 만드는 것이다. 이렇게 해서 만들어진 transiton probability를 쓰면 다음과 같다.
 
 <br>
 
@@ -164,7 +166,7 @@ $$
 $$
 \begin{align}
 \text{Transition probability} & \quad p_{i,j} = q_{i,j}\alpha_{i,j}\\\\\\
-& \quad p_{i,i}=q_{i,i} + \sum_{k\neq i}q_{i,k}(1-\alpha_{i,k})
+& \quad p_{i,i}=q_{i,i}\alpha_{i,i} + \sum_{k\neq i}q_{i,k}(1-\alpha_{i,k})
 \end{align}
 $$
 
@@ -190,7 +192,7 @@ $$
 
 이게 무슨 의미일까? 수식으로 살펴보면 다음과 같다. 위 식에서 $\pi_j$는 곧 우리가 모르는 분포, 미지의 분포에서 상태 $j$의 확률이다. 지금 우리가 한 것은 인위적으로 proposal 확률을 만들고, 전환확률이 detailed balance 조건을 만족하도록 accept 확률을 위와 같이 정하였기 때문에, (이전 자료에서 말한 몇 가지 가정을 만족한다고 하면) transition 확률을 이처럼 정의한 마코브 체인의 극한분포는 실제 미지의 분포 $\pi_j$에 수렴할 것임을 알고 있다. 
 
-((39)에서 식의 마지막 항에 대한 부연설명을 하자면, 만일 $Q$가 대칭행렬이라면, $q_{ij}=q_{ji}$이므로, 그냥 사라진다. 실제로는 proposal 분포를 노말분포로 할 것인데, 노말분포에서도 마찬가지로 어느 두 지점에서 대해서도 $q_{ij}=q_{ji}$가 성립함을 조금만 생각해보면 알 수 있다.)
+(부연설명을 하자면, 만일 $Q$가 대칭행렬이라면, $q_{ij}=q_{ji}$이므로, 그냥 사라진다. 실제로는 proposal 분포를 노말분포로 할 것인데, 노말분포에서도 마찬가지로 어느 두 지점에서 대해서도 $q_{ij}=q_{ji}$가 성립함을 조금만 생각해보면 알 수 있다.)
 
 좀 더 직관적으로 설명하자면, 모수 공간의 어떤 지점 $i$ 에서 임의로 (proposal $q_{i,j}$에 의하여) 다른 지점 $j$ 으로 간 것이다. 이 때 $j$ 지점에서의 "높이" (상수를 모르는 pdf의 값)가, 이전 지점 $i$ 지점에서의 높이보다 높으면 묻지도 따지지도 않고 그냥 $j$ 지점으로 옮겨가지만, 만일 높이가 더 낮다면 그 높이에 비례하는 확률만큼 그 지점으로 이동하는 것이다. 예컨대 새로운 지점에서의 높이가 절반이라면, 동전을 던져 앞면이 나오면 가고 뒷면이 나오면 가지 않는 식이다! 놀랍게도 이런식으로 계속 이동을 하면 마치 원래 미지의 분포에서 추출한 것만 같은 샘플을 추출할 수 있는 것이다!
 
@@ -202,10 +204,10 @@ $$
 
 $$
 \begin{align}
-Model\;Specification:&\quad D \sim N(\theta, \tilde\sigma^2)\\\\\\
-Prior\;Specication:&\quad \tilde\sigma^2 \sim \Gamma(\nu_0/2, \nu_0\sigma_0^2/2)\\\\\\
+\text{Likelihood}&\quad D \sim N(\theta, \tilde\sigma^2)\\\\\\
+\text{Prior}&\quad \tilde\sigma^2 \sim \Gamma(\nu_0/2, \nu_0\sigma_0^2/2)\\\\\\
 &\quad \theta \sim N(\mu_0, \tau_0^2)\\\\\\
-Posterior\;(upto\; cnst): &\quad p(\theta_i, \tilde\sigma_j^2|D) \propto 
+\text{Psterior} &\quad p(\theta_i, \tilde\sigma_j^2|D) \propto 
 p(\theta_i, \tilde\sigma_j^2)\times p(D|\theta_i, \tilde\sigma_j^2)\\\\\\
 &= dnorm(\theta_i, \mu_0, \tau_0^2)\times dgamma(\tilde\sigma^2_j, \nu_0/2, \nu_0\sigma_0^2/2)\times \prod_{k=1}^N dnorm(x_k, \theta_i, \tilde\sigma^2_j)
 \end{align}
@@ -384,11 +386,12 @@ $$
 
 $$
 \begin{align}
-Model\;Specification:&\quad D \sim N(\theta, \tilde\sigma^2)\\\\\\
-Prior\;Specication:&\quad \tilde\sigma^2 \sim \Gamma(\nu_0/2, \nu_0\sigma_0^2/2)\\\\\\
+\text{Likelihood}&\quad D \sim N(\theta, \tilde\sigma^2)\\\\\\
+\text{Prior}&\quad \tilde\sigma^2 \sim \Gamma(\nu_0/2, \nu_0\sigma_0^2/2)\\\\\\
 &\quad \theta \sim N(\mu_0, \tau_0^2)\\\\\\
-Full\;Condtional\;Posterior\: &\quad p(\theta|\tilde\sigma^2, D) = dnorm(\theta_i, \mu_0, \tau_0^2)\\\\\\
-&\quad p(\tilde\sigma^2|\theta, D)=dgamma(\tilde\sigma^2_j, \nu_0/2, \nu_0\sigma_0^2/2)
+\text{Posterior} &\quad p(\theta_i, \tilde\sigma_j^2|D) \propto 
+p(\theta_i, \tilde\sigma_j^2)\times p(D|\theta_i, \tilde\sigma_j^2)\\\\\\
+&= dnorm(\theta_i, \mu_0, \tau_0^2)\times dgamma(\tilde\sigma^2_j, \nu_0/2, \nu_0\sigma_0^2/2)\times \prod_{k=1}^N dnorm(x_k, \theta_i, \tilde\sigma^2_j)
 \end{align}
 $$
 
@@ -437,11 +440,11 @@ $$
 
 이를 알고리즘 단계로 나타내면, 아무 시작점 $\theta_t$에서 
 
-**Metropolis-Hastings Algorithm**
-
-1. **Generate $\phi \sim MVN(0, M)$**
-2. **Let $\theta^* \leftarrow \theta+\phi$**
-3. **Accept $\theta_{t+1}\leftarrow \theta^*$ with probability $\min(\dfrac{p(\theta^*)p(D|\theta^*)}{p(\theta_t)p(D|\theta_t)},1)$**
+> **Metropolis-Hastings Algorithm**
+>
+> 1. **Generate $\phi \sim MVN(0, M)$**
+> 2. Let $\theta^* \leftarrow \theta+\phi$
+> 3. Accept $\theta_{t+1}\leftarrow \theta^*$ with probability $\min(\dfrac{p(\theta^*)p(D|\theta^*)}{p(\theta_t)p(D|\theta_t)},1)$
 
 HM이 느린 이유는 2단계 때문이고, 때문에 HMC가 손을 본 부분이 바로 2이다. 
 
@@ -472,17 +475,16 @@ HM이 느린 이유는 2단계 때문이고, 때문에 HMC가 손을 본 부분�
    1. **At $\theta$, calculate $\nabla -\log p(\theta|D)$ (unnormalized)**
       *posterior는 몰라도 그 상수배인 prior x likelihood는 아니까 그냥 상수배 무시하고 그라디언트를 구한다. 모수 공간에서 높아지는 방향으로는 그라디언트가 양수일 것이고, 낮아지는 방향으로는 음수가 될 것이다. 음수 로그니까 우리는 낮아지는 방향으로 가고 싶을 거다.*
    2. **Make a half step: $\phi \leftarrow \phi-\dfrac{1}{2}\epsilon\nabla \log p(\theta|D) $**
-   *그라디언트에 따라서 모멘텀 벡터를 $\frac{1}{2} \epsilon$만큼 수정한다. 낮은 쪽으로 가는게 목적이니, 기울기가 양수이면 (즉 가는 방향이 오르막길이면) 반대 방향으로 가고, 기울기가 음수이면 (가는 방향이 내리막길이면) 그대로($-\times -=+$) 가면 된다. 그렇게 되면 원래 모멘텀 벡터는 원래 방향 $\phi$에서, 좀 더 로그 음수 posterior가 낮은 쪽으로 방향을 틀어 $(\nabla \log p(\theta|D))$, $\frac{1}{2} \epsilon$만큼 더 갈 것이다.*
-   
+     *그라디언트에 따라서 모멘텀 벡터를 $\frac{1}{2} \epsilon$만큼 수정한다. 낮은 쪽으로 가는게 목적이니, 기울기가 양수이면 (즉 가는 방향이 오르막길이면) 반대 방향으로 가고, 기울기가 음수이면 (가는 방향이 내리막길이면) 그대로($-\times -=+$) 가면 된다. 그렇게 되면 원래 모멘텀 벡터는 원래 방향 $\phi$에서, 좀 더 로그 음수 posterior가 낮은 쪽으로 방향을 틀어 $(\nabla \log p(\theta|D))$, $\frac{1}{2} \epsilon$만큼 더 갈 것이다.*
    3. **Move with momentum: $\theta \leftarrow \theta - \epsilon M^{-1} \phi$** 
-   *2에서 기울기에 따라 수정된 $\phi$에 따라 $\theta$를 이동한다. 이렇게 이동한 이유는, 새로 이동한 지점에서 다시 기울기를 계산해 또 낮은 방향으로 방향을 틀기 위함이다.* $M^{-1}$은 그냥 대각행렬이고, 모수 공간의 각 축마다 스케일을 다시 맞춰준다고 생각하면 된다.
-   
-   4. **Repeat from 1 to 3 for $L$ times to get $\theta^*, \phi^*$**
+     *2에서 기울기에 따라 수정된 $\phi$에 따라 $\theta$를 이동한다. 이렇게 이동한 이유는, 새로 이동한 지점에서 다시 기울기를 계산해 또 낮은 방향으로 방향을 틀기 위함이다.* $M^{-1}$은 그냥 대각행렬이고, 모수 공간의 각 축마다 스케일을 다시 맞춰준다고 생각하면 된다.
+   4. **Repeat from 1 to 3 for $L$ times to get $\theta^{\*}, \phi^{\*}$**
 
 
    *왜 이러는 걸까? 사실 HMC가 정말 하고 싶은 것은 **음수로그분포(골짜기)를 따라 툭 건들었더니 도로록 내려가는 공을 시뮬레이션 하는거다.** 그렇게 해서 공을 적당히 굴리다가 멈추고, 그 멈춘 지점을 새로운 proposal로 받아들이고 싶은 거다. 이렇게 생각하면 음수로그분포 $-\log p(\theta|D)$는 마치 "위치 에너지", 모멘텀 벡터의 $-\log p(\theta)$는 마치 "운동 에너지"로 볼 수 있다. 그러나 컴퓨터가 이산 공간이니 잠깐 갔다가 다시 방향 틀어서 잠깐 가는 과정을 $L$번 돌려서 최대한 연속적인 움직임을 근사하는 것이다.*
 
-3. **Accept $\theta_{t+1}\leftarrow \theta^*$ with probability $\min(\dfrac{p(\theta^*)p(D|\theta^*)p(\phi^*)}{p(\theta_t)p(D|\theta_t)p(\phi_t)},1)$**
+3. <strong>Accept $\theta_{t+1}\leftarrow \theta^{\*}$ with probability $\min(\dfrac{p(\theta^{\*})p(D|\theta^{\*})p(\phi^{\*})}{p(\theta_t)p(D|\theta_t)p(\phi_t)},1)$ </strong>
+   
    *만일 정말로 연속적으로 움직이는 공을 시뮬레이션 했다면 모든 지점에서 위치에너지와 운동에너지의  합은 일정할테니 새로운 샘플은 항상 받아들여질 것이다. 그러나 이산형이기 때문에 근사 오차가 있다. 만일 매번 깔짝대는 만큼인 $\epsilon$이 작으면 근사 오차가 줄어서 샘플이 잘 받아들여지겠지만, 그만큼 멀리 가기까지 오래 걸려서 $L$이 커야 하고, 때문에 연산을 많이 해야할 것이다. (대개 65% 정도 생각하고 $\epsilon$을 잡는다고 한다.)*
 
 
@@ -532,10 +534,14 @@ MCMC의 단점은 크게 1) 생성된 샘플들 간에 상관관계가 높으며
 
 Brooks-Gelman-Rubin statistic에 대해 부연설명을 하겠다. 
 
-*  $m$개의 크기 n인 체인 내에서 각각 체인 내 분산을 $s^2_j=\dfrac{1}{n-1}\sum_{i=1}^n (\theta_{ij}-\bar{\theta}_j)^2$로 계산하여, $W=\dfrac{1}{m}\sum_{j=1}^m s^2_j$로 모든 체인에 걸쳐 평균을 내리면, $W$는 "체인 내 분산"을 나타내는 통계량이 된다. 
-* 각 체인 마다의 평균 $\bar{\theta}_j$을 또 m개에 걸쳐 평균을 내 $\bar{\bar{\theta}}$를 계산하자. 그러고 $B=\dfrac{n}{m-1} \sum_{j=1}^m(\bar{\theta}_j-\bar{\bar{\theta}})^2$을 계산하면 이건 "체인 간 분산"을 나타내는 통계량이다.
+* $m$개의 크기 n인 체인 내에서 각각 체인 내 분산을 $s^2_j=\dfrac{1}{n-1}\sum_{i=1}^n (\theta_{ij}-\bar{\theta}_j)^2$로 계산하여, $W=\dfrac{1}{m}\sum_{j=1}^m s^2_j$로 모든 체인에 걸쳐 평균을 내리면, $W$는 "체인 내 분산"을 나타내는 통계량이 된다. 
+
+* 각 체인 마다의 평균 $\bar{\theta}_j$ 을 또 m개에 걸쳐 평균을 내 $\bar{\theta}$를 계산하자. 
+
+  그러고 $B=\dfrac{n}{m-1} \sum_{j=1}^m(\bar{\theta}_j-\bar{\theta})^2$을 계산하면 이건 "체인 간 분산"을 나타내는 통계량이다.
+
 * 이제 $\hat{V(\bar{\theta})} = (1-1/n)W + B/n$으로 정의하자. 
-  * $E[W]=\sigma^2/n, E[B]= E[s_j^2]=\sigma^2$이므로 $E[\hat{V(\theta)}] = (1-1/n)\sigma^2/n + \sigma^2/n = \sigma^2/n$가 될 것이다. 즉 $\hat{V(\bar{\theta})}$은 unbiased estimator이다.
+  * $E[W]=E[B]= E[s_j^2]=\sigma^2$이므로 $E[\hat{V(\theta)}] = (1-1/n)\sigma^2 + \sigma^2/n = \sigma^2$가 될 것이다. 즉 $\hat{V(\bar{\theta})}$은 unbiased estimator이다.
   * 그러나 실제로는 각 체인마다 시작점이 다 다르니 (overdispension) $B$가 크고, $n$이 커지면서 점점 줄어들 것이다.
   * **때문에 $\sqrt{\hat{V(\bar{\theta})}/W}$은 처음에는 1보다 크다가, 수렴이 잘 되었으면 1으로 위에서 수렴한다.** 이걸 BGR statistics라고 한다.
     (BGR stat이 1에 가까워지는 시점을 기준으로 Burn-in을 판단하기도 한다.)
@@ -543,6 +549,10 @@ Brooks-Gelman-Rubin statistic에 대해 부연설명을 하겠다.
 ![슬라이드26](/image/슬라이드26.PNG)
 
 ESS에 대해서 부연 설명을 하자면 $ESS = \dfrac{N}{\sum_{-\infty}^{\infty} \rho_t}=\dfrac{N}{1+2\sum_{t=1}^{\infty} \rho_t}$이며, 만일 모든 $t>1$에 대해 $\rho_t=1$이면 $ESS=1$, $\rho_t=0$이면 $ESS=N$.
+
+그래서 thinning을 해야함? 딱히... 오히려 estimation의 정확성을 낮춘다고 하네
+
+[On thinning of chains in MCMC - Link - 2012 - Methods in Ecology and Evolution - Wiley Online Library](https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2011.00131.x)
 
 ![슬라이드27](/image/슬라이드27.PNG)
 
