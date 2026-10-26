@@ -10,7 +10,7 @@
 		<meta property="og:title" content="Bayesian Approach: 하나의 데이터, 임의의 모수" />
 <meta property="og:description" content="Example article description" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/" />
+<meta property="og:url" content="/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/" />
 <meta property="article:published_time" content="2020-07-20T05:30:00+09:00" />
 <meta property="article:modified_time" content="2020-07-20T05:30:00+09:00" />
 
@@ -27,9 +27,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/oldblog/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/oldblog/favicon.ico">
 		
 </head>
 <body class="body">
@@ -38,9 +38,9 @@
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Hun Learning" rel="home">
+		<a class="logo__link" href="/oldblog/" title="Hun Learning" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/mypic2.jpg">
+					<img class="logo__img" src="/oldblog/mypic2.jpg">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">Hun Learning</div>
 					<div class="logo__tagline">In Search Of The Truth Projected Onto A Finite Dimension</div>
@@ -54,7 +54,7 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/about/">
+			<a class="menu__link" href="/oldblog/posts/about/">
 				
 				<span class="menu__text">Author</span>
 				
@@ -110,12 +110,12 @@
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Kang Gyeonghun</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-07-20T05:30:00&#43;09:00">2020-07-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/probabilistic-machine-learning/" rel="category">Probabilistic Machine Learning</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-07-20T05:30:00&#43;09:00">2020-07-20</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/oldblog/categories/probabilistic-machine-learning/" rel="category">Probabilistic Machine Learning</a>
 	</span>
 </div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="/cover/robotbayesian.jpg" alt="Bayesian Approach: 하나의 데이터, 임의의 모수">
+			<img src="/oldblog/cover/robotbayesian.jpg" alt="Bayesian Approach: 하나의 데이터, 임의의 모수">
 		</figure><div class="content post__content clearfix">
 			<h2 id="br0-생각하는-로봇은-베이지안이다"><!-- raw HTML omitted -->0. 생각하는 로봇은 베이지안이다!</h2>
 <p>주변 환경을 인지하고 목적지를 찾는 로봇을 생각해보자. 목적지로 가는 경로에는 수많은 경우의 수가 있다. 이 경로에서 로봇은 시시각각 환경을 파악해서, 즉 데이터를 수집해서 가장 안전한 길을 택해야 한다. 전방에 위험징후를 포착했다. 로봇은 그 방향으로 가는 길이 위험하다고 판단해 경로를 변경해야 한다. 자 그러면 이걸 어떻게 코딩할까? 각각의 길이 위험할 확률 $p(road_i=unsafe)$과, 각각의 길에서 위험한 징후가 포착될 확률 $p(sign\mid road_i=unsafe)$ 을 고려하여, 위험할 확률 $p(road_i = unsafe \mid sign)$ 을 다시 계산해야한다. 사실 우리는 머릿 속으로 끊임없이 베이즈 정리를 쓰고 있지만 우리가 모르거나, 계산이 이상하거나, 착각을 하고 있을 뿐이다. 숫자로 생각하는 로봇은 철저한 베이지안이다!</p>
@@ -185,15 +185,15 @@ $$</p>
 <p>Posterior Predictive를 잘 살펴보면, 새로운 데이터의 확률은, 모든 가능한 경우 $\theta$에 걸쳐 그 데이터의 확률(likelihood) $p(x \mid \theta, D))$을 모두 고려하되, 그 각각의 가능성에 대해 사후믿음 $p(\theta \mid D)$만큼의 가중치를 주어서 평균한 값이라는 말이다. 빈도론에서의 예측 분포는 오직  $p(x \mid \theta_{mle})$이다. <!-- raw HTML omitted -->빈도론이 단 하나의 경우만을 고려한다면, 베이지안에서는 나의 믿음에 따라 모든 가능한 경우의 수를 모두 고려한다는 점이 가장 큰 차이점이다.<!-- raw HTML omitted --></p>
 <h2 id="br3-베이지안-논리의-직관적인-이해"><!-- raw HTML omitted -->3. 베이지안 논리의 직관적인 이해</h2>
 <p>이 부분은 이전에 만들어놓은 강의자료로 대체합니다!</p>
-<p><img src="/image/CH01-17.png" alt="CH01-17"></p>
-<p><img src="/image/CH01-18.png" alt="CH01-18"></p>
-<p><img src="/image/CH01-19.png" alt="CH01-19"></p>
-<p><img src="/image/CH01-20.png" alt="CH01-20"></p>
-<p><img src="/image/CH01-21.png" alt="CH01-21"></p>
-<p><img src="/image/CH01-22.png" alt="CH01-22"></p>
-<p><img src="/image/CH01-23.png" alt="CH01-23"></p>
-<p><img src="/image/CH01-24.png" alt="CH01-24"></p>
-<p><img src="/image/CH01-25.png" alt="CH01-25"></p>
+<p><img src="/oldblog/image/CH01-17.png" alt="CH01-17"></p>
+<p><img src="/oldblog/image/CH01-18.png" alt="CH01-18"></p>
+<p><img src="/oldblog/image/CH01-19.png" alt="CH01-19"></p>
+<p><img src="/oldblog/image/CH01-20.png" alt="CH01-20"></p>
+<p><img src="/oldblog/image/CH01-21.png" alt="CH01-21"></p>
+<p><img src="/oldblog/image/CH01-22.png" alt="CH01-22"></p>
+<p><img src="/oldblog/image/CH01-23.png" alt="CH01-23"></p>
+<p><img src="/oldblog/image/CH01-24.png" alt="CH01-24"></p>
+<p><img src="/oldblog/image/CH01-25.png" alt="CH01-25"></p>
 <h3 id="예시-지금-신촌에-비가-올까">예시: 지금 신촌에 비가 올까?</h3>
 <p><strong><!-- raw HTML omitted -->(미국 Facebook 면접문제 변용) 오늘 아침 일기 예보를 보니 신촌에 비가 올 확률이 $25%$이라고 합니다. 아침을 먹고 현관문을 나서기 전, 당신은 자취하는 친구 세 명에게 지금 비가 오는지 따로따로 물어봅니다. 모두 지금 비가 온다고 합니다. 하지만 당신의 친구들은 당신을 곯리기 위해 세 번 중 한 번은 거짓말을 합니다. 그렇다면 당신은 우산을 챙길 것인가요? 그 이유와 함께 설명해주세요.</strong></p>
 <p><!-- raw HTML omitted -->인터넷에 떠도는 페이스북 면접 문제를 가져와서 변용하였다. 이 문제에서 친구들의 답변 $YYY$를 Data, 비가 내리는 여부를 모수 $\theta$로 생각하면, 다음과 같은 두 풀이가 가능하다.</p>
@@ -233,7 +233,7 @@ $$
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/bayes-rule/" rel="tag">Bayes Rule</a>
+			<a class="tags__link btn" href="/oldblog/tags/bayes-rule/" rel="tag">Bayes Rule</a>
 		</li>
 	</ul>
 </div>
@@ -243,7 +243,7 @@ $$
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Kang Gyeonghun avatar" src="/mypic1.jpg" class="avatar" height="90" width="90">
+		<img alt="Kang Gyeonghun avatar" src="/oldblog/mypic1.jpg" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name"></span>
@@ -255,13 +255,13 @@ $$
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/posts/bayesian-ml/week1/07-%EB%B9%88%EB%8F%84%EB%A1%A0%EC%A0%81-%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4%EC%9C%A0%EC%9D%98%EC%88%98%EC%A4%80%EA%B2%80%EC%A0%95nhst%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90/" rel="prev">
+		<a class="pager__link" href="/oldblog/posts/bayesian-ml/week1/07-%EB%B9%88%EB%8F%84%EB%A1%A0%EC%A0%81-%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4%EC%9C%A0%EC%9D%98%EC%88%98%EC%A4%80%EA%B2%80%EC%A0%95nhst%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
 			<p class="pager__title">07 빈도론적 귀무가설유의수준검정(NHST)의 문제점</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/" rel="next">
+		<a class="pager__link" href="/oldblog/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
 			<p class="pager__title">Conjugate Prior for Univariate - Poisson Model</p>
 		</a>
@@ -306,68 +306,68 @@ $$
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/">Introduction to Rcpp and RcppArmadillo</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/">Introduction to Rcpp and RcppArmadillo</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
 		</ul>
 	</div>
 </div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaboost/" title="ADABOOST">ADABOOST</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cart/" title="CART">CART</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/clustering/" title="Clustering">Clustering</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/d-seperation/" title="D-seperation">D-seperation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/determinant/" title="Determinant">Determinant</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/frequentist/" title="Frequentist">Frequentist</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/jacobian/" title="Jacobian">Jacobian</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-cv/" title="k-CV">k-CV</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-means/" title="K-means">K-means</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kernel/" title="Kernel">Kernel</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kl-divergence/" title="KL divergence">KL divergence</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lasso/" title="Lasso">Lasso</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lda/" title="LDA">LDA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mcmc/" title="MCMC">MCMC</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mse/" title="MSE">MSE</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ols/" title="OLS">OLS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pca/" title="PCA">PCA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rcpp/" title="Rcpp">Rcpp</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ridge/" title="Ridge">Ridge</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/svm/" title="SVM">SVM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaboost/" title="ADABOOST">ADABOOST</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/cart/" title="CART">CART</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/clustering/" title="Clustering">Clustering</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/d-seperation/" title="D-seperation">D-seperation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/determinant/" title="Determinant">Determinant</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/frequentist/" title="Frequentist">Frequentist</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/jacobian/" title="Jacobian">Jacobian</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-cv/" title="k-CV">k-CV</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-means/" title="K-means">K-means</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kernel/" title="Kernel">Kernel</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kl-divergence/" title="KL divergence">KL divergence</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lasso/" title="Lasso">Lasso</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lda/" title="LDA">LDA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mcmc/" title="MCMC">MCMC</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mse/" title="MSE">MSE</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ols/" title="OLS">OLS</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/pca/" title="PCA">PCA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/rcpp/" title="Rcpp">Rcpp</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ridge/" title="Ridge">Ridge</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/svm/" title="SVM">SVM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
 	</div>
 </div>
 </aside>
@@ -382,7 +382,7 @@ $$
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="/oldblog/js/menu.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>

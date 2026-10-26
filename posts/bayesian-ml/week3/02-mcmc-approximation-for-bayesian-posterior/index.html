@@ -10,7 +10,7 @@
 		<meta property="og:title" content="(MCMC) 베이지안 사후분포 근사를 위한 MCMC 방법론" />
 <meta property="og:description" content="Example article description" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/" />
+<meta property="og:url" content="/oldblog/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/" />
 <meta property="article:published_time" content="2020-08-03T07:00:00+09:00" />
 <meta property="article:modified_time" content="2020-08-03T07:00:00+09:00" />
 
@@ -27,9 +27,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/oldblog/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/oldblog/favicon.ico">
 		
 </head>
 <body class="body">
@@ -38,9 +38,9 @@
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Hun Learning" rel="home">
+		<a class="logo__link" href="/oldblog/" title="Hun Learning" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/mypic2.jpg">
+					<img class="logo__img" src="/oldblog/mypic2.jpg">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">Hun Learning</div>
 					<div class="logo__tagline">In Search Of The Truth Projected Onto A Finite Dimension</div>
@@ -54,7 +54,7 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/about/">
+			<a class="menu__link" href="/oldblog/posts/about/">
 				
 				<span class="menu__text">Author</span>
 				
@@ -111,12 +111,12 @@
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Kang Gyeonghun</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-08-03T07:00:00&#43;09:00">2020-08-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/probabilistic-machine-learning/" rel="category">Probabilistic Machine Learning</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-08-03T07:00:00&#43;09:00">2020-08-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/oldblog/categories/probabilistic-machine-learning/" rel="category">Probabilistic Machine Learning</a>
 	</span>
 </div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="/cover/mcmc.jpg" alt="(MCMC) 베이지안 사후분포 근사를 위한 MCMC 방법론">
+			<img src="/oldblog/cover/mcmc.jpg" alt="(MCMC) 베이지안 사후분포 근사를 위한 MCMC 방법론">
 		</figure>
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
@@ -256,10 +256,10 @@ p(\theta_i, \tilde\sigma_j^2)\times p(D|\theta_i, \tilde\sigma_j^2)\\\<br>
 $$</p>
 <!-- raw HTML omitted -->
 <p>이때 모수 평균과 precision이 이루는 모수공간에서 임의의 점을 초기 시작점으로 삼고, 주변의 임의의 점을 탐색할 proposal 분포를 임의로 설정한 다음에, 두 지점에서의 Likelihood x Prior 값을 비교하여 MH 샘플링을 진행한다.</p>
-<p><img src="/image/snip01.png" alt="snip01"></p>
+<p><img src="/oldblog/image/snip01.png" alt="snip01"></p>
 <p>먼저 임의로 어떤 데이터를 가져오고, 그 데이터의 분포에 대한 prior의 모수를 설정한다. 그 다음 현재 지점과 제안된 지점에서의 높이를 비교할 함수 unnormalized_post를 정의하고, 한 지점에서 다른 지점을 제안할 proposal 분포를 정규분포로 정의한다. 정규분포를 선택한 이유는 별다른 것은 아니고 그냥 전후좌우 차별없이 제안을 하기 위함이며, 분산이 0보다 작은 경우는 인위적으로 제거한다. 이때 proposal 분포의 분산을 어떻게 정하느냐에 따라 모수공간에서 얼마나 공격적으로 탐색을 할지가 결정된다. 분산이 너무 크면 높이가 높은 지점을 제대로 탐색하지 못하며, 너무 작으면 한 곳에 불필요하게 오래 머물기 때문에, 모수 공간과 시뮬레이션 결과를 고려하여 적당하게 정하는 것이 중요하다. (finite state space를 가정했는데 proposal이 연속형 정규분포인게 이상하게 다가올 수도 있다. 그러나 컴퓨터에서는 정규분포도 이산형으로 근사한 분포라는 점을 생각하면 큰 무리는 아닌 듯 하다.)</p>
 <p>이렇게 사후분포의 샘플을 생성한 결과는 다음과 같다.</p>
-<p><img src="/image/snip02.png" alt="snip02"></p>
+<p><img src="/oldblog/image/snip02.png" alt="snip02"></p>
 <p>(2,1) 그래프는 모수공간에서 처음 몇번 탐색이 진행되는 경과를 보여준다. 처음에 초기점 주위에서 놀다가 점차 다른 구역으로 뻗어나가는 모습을 볼 수 있다. 이를 각각의 모수에 대해 경과를 보면 (2,2), (2,3) 그래프와 같다. 다만 처음에 생성된 샘플들은 임의로 주어진 초기치의 영향을 많이 받는다. 마코브체인의 극한분포가 실제 분포에 수렴하기 위해서는 충분히 많은 &ldquo;Burn-in&rdquo; 기간이 필요하며, 때문에 처음 200개의 샘플들은 최종 결과에서 제외한다. 그렇게 해서 총 5,000개의 샘플로 근사된 사후분포는 (1,1)과 같으며, 이를 각각의 모수에 대해 보면 (1,2)와 (1,3)과 같다. 적분으로는 구할 수 없었던 분포가 비로소 눈에 보이는 것이다.</p>
 <h4 id="brmh의-신기한-활용-암호-해독하기"><!-- raw HTML omitted -->MH의 신기한 활용: 암호 해독하기!</h4>
 <p>공부하다보니 MH 알고리즘이 암호해독에 쓰인 경우도 있어 신나서 헐레벌떡 달려가서 보았다. 아래 링크에서 자세히 읽을 수 있다. (그림도 여기서 가져옴)</p>
@@ -268,7 +268,7 @@ $$</p>
 <li><a href="https://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf">https://math.uchicago.edu/~shmuel/Network-course-readings/MCMCRev.pdf</a></li>
 </ul>
 <p>요컨대 말하자면 MH 알고리즘은 crpytography에서의 최적화 문제에서 사용이 가능하다는 것. 여기서는 간략하게 소개하겠다. 다음의 그림과 같은 암호문을 해독해야 한다고 해보자.</p>
-<p><img src="/image/BayesMLweek3/fig09.PNG" alt="fig09"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig09.PNG" alt="fig09"></p>
 <p>암호에 쓰인 문자의 집합을 $S={걁, 굵, 뛠,&hellip;}$이라고 하고, 우리가 알아보는 알파벳의 집합을 $A={a,b,c,&hellip;}$이라고 하면, 암호를 해독하는 &ldquo;cipher&quot;라는 것은 다음의 함수를 의미한다.</p>
 <!-- raw HTML omitted -->
 <p>$$
@@ -301,10 +301,10 @@ $$</p>
 L(encrypted;code|cipher=\phi_1) = (\dfrac{10}{16})^{10} (\dfrac{5}{16})^7 (\dfrac{1}{16})^6
 $$</p>
 <p><!-- raw HTML omitted -->암호문을 보기 전 cipher의 분포를 uniform하게 주고 (편의상 모두 1), 암호문을 바탕으로 각각의 $\phi$에 대해 위의 식처럼 likelihood를 계산하면, (24)처럼 cipher의 posterior분포를 구할 수 있다. 이때 이 분포를 직접 구하기에는 분모의 상수를 계산하는게 너무 힘드니, MH를 이용해 posterior 분포를 근사하는 것이다. (실제로는 이렇게 한 알파벳의 빈도만 가지고는 해독이 엉망진창이어서, 두 알파벳의 쌍, 예컨대 $(a,b)$, $(b,a)$, $(a,c), &hellip;$모든 가능한 쌍의 빈도를 계산해 likelihood를 세웠다고 한다.)</p>
-<p><img src="/image/BayesMLweek3/fig12.PNG" alt="fig12"></p>
-<p><img src="/image/BayesMLweek3/fig10.PNG" alt="fig10"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig12.PNG" alt="fig12"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig10.PNG" alt="fig10"></p>
 <p>그렇게 하면 위의 마코브 체인이 진행됨에 따라 $\phi$의 샘플이 나올 것이고(위 그림은 셰익스피어의 햄릿 구절을 임의로 암호화하여 해독한 결과), 위의 그림처럼 그에 따라 암호도 다르게 해독될 것이다. 이 샘플들은 $\pi(\phi)$ 분포가 몰려있는 부분 중점으로 많이 나올 것이다. 이 부분에서 가장 Likelihood가 높은 $\phi$를 찾는 것이다. 즉 MCMC를 사용해여 암호의 Likelihood $L(code|\phi)$를 최적화한 것. 그렇게 해서 최종 해석된 암호는 다음과 같다고 한다. 치사하게 영어와 스페인어 등등을 섞어 썼는데도 용케 잘 맞췄다!</p>
-<p><img src="/image/BayesMLweek3/fig11.png" alt="fig11"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig11.png" alt="fig11"></p>
 <h3 id="br2-3-gibbs-sampler-algorithms"><!-- raw HTML omitted -->2-3. Gibbs Sampler Algorithms</h3>
 <p>앞서 살펴본 Metropolis-Hastings 알고리즘은 한 지점에서 다른 지점으로 이동을 할 때 임의로 정규분포로 정한 proposial 분포를 사용하였다. 하지만 만일 모수공간을 탐색할 때, 어느 한 모수를 제외한 다른 모든 모수들이 주어졌을 때  그 모수의 확률을 알고 있다면, 즉 모든 모수에 대하여 &ldquo;full conditional distribution&quot;을 알고 있다면, 굳이 이렇게 임의로 proposal 분포를 사용할 필요 없이 바로 그 조건부분포를 사용할 수 있다. 이렇게 할 경우, MH 알고리즘에서처럼 굳이 accept-reject를 결정할 필요 없이 조건부분포로 생성된 샘플을 바로 마코브 체인의 샘플로 받아들일 수 있는데, 이를 수식으로 보이면 다음과 같다.</p>
 <p>full conditional distribution을 알고 있다는 것은 다음을 의미한다.</p>
@@ -346,9 +346,9 @@ p(\theta_i, \tilde\sigma_j^2)\times p(D|\theta_i, \tilde\sigma_j^2)\\\<br>
 $$</p>
 <!-- raw HTML omitted -->
 <p>정규분포 에시를 보면, 임의로 평균과 precision의 초기 시작점이 주어져있을 때, 먼저 1) precision이 고정된 상태에서 데이터와 precision이 주어졌을 때의 평균의 분포에 따라 새로운 평균을 추출하고, 2) 그 후 평균이 고정된 상타에서 데이터와 평균이 주어졌을 때의 precision의 분포에 따라 새로운 precision을 추출하는 방식을 계속 반복하는 것이다. (원래는 매번 1/2의 확률에 따라 평균과 precision 중 하나를 택해야 하나, 점근적으로 모든 모수가 뽑힐 확률이 동등하기만 하면 되므로, 편의상 순차대로 뽑는 알고리즘을 써도 무방하다.)</p>
-<p><img src="/image/snip03.png" alt="snip03"></p>
+<p><img src="/oldblog/image/snip03.png" alt="snip03"></p>
 <p>Gibbs Sampler의 코드는 Metropolis Hastings보다 더 간단하다. Proposal 분포를 정하고, 매번 높이를 비교하여 기각하거나 채택하는 과정이 없기 때문이다. 먼저 MH와 같이 데이터와 사전분포를 특정하고, 순차대로 full conditional posterior 분포에 따라 샘플을 생성한다. 이렇게 해서 생성된 결과는 다음과 같다.</p>
-<p><img src="/image/snip04.png" alt="snip04"></p>
+<p><img src="/oldblog/image/snip04.png" alt="snip04"></p>
 <p>대략적인 근사결과는 Metropolis-Hastings와 같다. 큰 차이점이라고 한다면 매번 샘플이 생성되는 경로가 직각, 즉 axis-aligned 되어있다는 것이다. 이는 proposal 분포가 full condtional distribution이기에, 다른 모든 모수가 고정된 상태에서 하나의 모수에 대해서만 샘플링을 하기 때문에 당연한 결과이다.</p>
 <h3 id="br2-4-hamiltonian-monte-carlo"><!-- raw HTML omitted -->2-4. Hamiltonian Monte Carlo</h3>
 <p>우리가 직접 쓰게될 Stan 프로그램은 샘플링을 할 떄 HMC를 사용하기 때문에, 이게 뭔지 간략하게만 알아보겠다. Gelman의 BDA에 12.4과 Kruschke의 DBDA의 14장을 주로 참고하였다.</p>
@@ -388,7 +388,7 @@ $$</p>
 <li>
 <p><strong>Leapfrog steps: 깔짝이</strong> Let $\phi \leftarrow \phi_t, \theta \leftarrow \theta_t$</p>
 <p><em>leapfrog가 뭔가 해서 찾아봤는데 이거다. 한번에 확 멀리 뛰지 않고 저렇게 한 놈씩 제껴가면서 깔짝깔짝 넘어가는 건데, HMC에서 방향을 찾는 방법과 비슷하다. 나는 그냥 깔짝이라고 하겠다. HM에서는 한번 $\phi$가 뽑히면 그냥 뽑힌 그대로 머얼찍이 한번 뛰어가고 마는데, HMC에서는 매번 기울기를 보면서 깔짝 깔짝 뛰어가는 것.</em></p>
-<p><img src="/image/leapfrog.jpg" alt="leapfrog"></p>
+<p><img src="/oldblog/image/leapfrog.jpg" alt="leapfrog"></p>
 <ol>
 <li><strong>At $\theta$, calculate $\nabla -\log p(\theta|D)$ (unnormalized)</strong>
 <em>posterior는 몰라도 그 상수배인 prior x likelihood는 아니까 그냥 상수배 무시하고 그라디언트를 구한다. 모수 공간에서 높아지는 방향으로는 그라디언트가 양수일 것이고, 낮아지는 방향으로는 음수가 될 것이다. 음수 로그니까 우리는 낮아지는 방향으로 가고 싶을 거다.</em></li>
@@ -406,20 +406,20 @@ $$</p>
 </li>
 </ol>
 <p>이 과정을 그림으로 나타낸게 아래 그림이다(Kruschke, 2015). 세 번재 줄의 수많은 갈래들 하나하나는 한 번 시행마다 $\phi$가 수정되면서 $\theta$가 수정되는 궤적을 나타낸다. 그 갈래들의 종착역을 히스토그램으로 나타낸게 맨 마지막 줄이다. 보면 분포의 중심이 posterior가 높은 곳을 향해 치우친 것을 볼 수 있다. 그래서 MH에 비해 수렴 속도가 빠른 것이다.</p>
-<p><img src="/image/BayesMLweek3/fig13.PNG" alt="fig13"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig13.PNG" alt="fig13"></p>
 <p>(출처: Doing Bayesian Data Analysis, Kruschke)</p>
 <p>HMC에서 내가 조정할 파라미터는 크게 1) 프로포절 분포의 공분산 $M$, 2) 얼마나 오래 공을 굴릴 것인지 $L, \epsilon$인데, 이걸 잘못 설정하면 다음과 같은 참사가 발생한다. 왼쪽 그림을 공을 너무 오래 굴린 경우고, 오른쪽 그림은 공을 처음에 너무 약하게 건들거나 너무 세게 친 경우이다.</p>
-<p><img src="/image/BayesMLweek3/fig14.png" alt="fig14"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig14.png" alt="fig14"></p>
 <p>(출처: Doing Bayesian Data Analysis, Kruschke)</p>
 <p>HMC를 R에서 실제로 생 코드로 돌려볼 수 있다. 코드는 다음의 링크를 참조: <a href="https://jonnylaw.rocks/blog/hamiltonian_monte_carlo_in_r/">https://jonnylaw.rocks/blog/hamiltonian_monte_carlo_in_r/</a></p>
 <h2 id="br3-mcmc-diagnostics"><!-- raw HTML omitted -->3. MCMC diagnostics</h2>
 <p>MCMC의 단점은 크게 1) 생성된 샘플들 간에 상관관계가 높으며, 2) 당최 언제 수렴하는지 알 수가 없다는 것이다. 마코브 체인의 극한 분포 정리가 말해주는 것은 그냥 transiton probability만 제대로 설정했다면, 한없이 무한정으로 돌리다보면 각 상태 (모수)의 출현빈도(경험분포)가 극한분포인 사후분포로 수렴한다는 것이다. 그러나 수렴하기까지 얼마나 많이 돌려야하는지 ($n$), 또 한 체인 말고 여러 체인을 돌리면 얼마나 돌려야 하는지($m$)에 대해서는 정말 아무도 모른다. 우리가 할 수 있는 것은 각각의 체인마다 각각의 모수에 대해 trace plot을 그려서 눈으로 확인해보고, 수렴이 적당히 되었는지 체인에서 어떤 통계량을 계산해보고 가늠하는 것 뿐이다. 그렇게 해서 대충 수렴한 것 같으면 $n, m$이 뭐이 어드레 간에 그냥 신경을 끄고 결과를 받아들이는 것 (&ldquo;Sometimes you don&rsquo;t care&rdquo;).</p>
-<p><img src="/image/BayesMLweek3/fig15.PNG" alt="fig15"></p>
+<p><img src="/oldblog/image/BayesMLweek3/fig15.PNG" alt="fig15"></p>
 <p>(출처: <a href="http://www.robots.ox.ac.uk/~fwood/teaching/C19_hilary_2015_2016/mcmc.pdf">http://www.robots.ox.ac.uk/~fwood/teaching/C19_hilary_2015_2016/mcmc.pdf</a>)</p>
 <p>(하나의 긴 체인을 돌려도 수렴을 잘 못하는 것 같으면 대신 출발 지점을 여러 개로 해서 여러 체인을 돌려 그 체인들을 합쳐야 한다는 의견이 있다. 하지만 이 의견을 까는 사람도 있는데, &ldquo;하나의 긴 체인에서 답이 안 나오면 여러 개의 짧은 체인을 돌리는 것도 부질없다&quot;라고 한다. <a href="http://users.stat.umn.edu/~geyer/mcmc/one.html">http://users.stat.umn.edu/~geyer/mcmc/one.html</a>)</p>
 <p>그래서 지금부터는 MCMC 결과의 진단법에 대해 간단히 알아보겠다. 자료는 19년 2학기 베이즈 세션 때 본인이 만든 슬라이드를 그대로 사용한다.</p>
-<p><img src="/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C24.PNG" alt="슬라이드24"></p>
-<p><img src="/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C25.PNG" alt="슬라이드25"></p>
+<p><img src="/oldblog/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C24.PNG" alt="슬라이드24"></p>
+<p><img src="/oldblog/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C25.PNG" alt="슬라이드25"></p>
 <p>Brooks-Gelman-Rubin statistic에 대해 부연설명을 하겠다.</p>
 <ul>
 <li>
@@ -439,11 +439,11 @@ $$</p>
 </ul>
 </li>
 </ul>
-<p><img src="/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C26.PNG" alt="슬라이드26"></p>
+<p><img src="/oldblog/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C26.PNG" alt="슬라이드26"></p>
 <p>ESS에 대해서 부연 설명을 하자면 $ESS = \dfrac{N}{\sum_{-\infty}^{\infty} \rho_t}=\dfrac{N}{1+2\sum_{t=1}^{\infty} \rho_t}$이며, 만일 모든 $t&gt;1$에 대해 $\rho_t=1$이면 $ESS=1$, $\rho_t=0$이면 $ESS=N$.</p>
 <p>그래서 thinning을 해야함? 딱히&hellip; 오히려 estimation의 정확성을 낮춘다고 하네</p>
 <p><a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1111/j.2041-210X.2011.00131.x">On thinning of chains in MCMC - Link - 2012 - Methods in Ecology and Evolution - Wiley Online Library</a></p>
-<p><img src="/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C27.PNG" alt="슬라이드27"></p>
+<p><img src="/oldblog/image/%EC%8A%AC%EB%9D%BC%EC%9D%B4%EB%93%9C27.PNG" alt="슬라이드27"></p>
 <h2 id="brreferences"><!-- raw HTML omitted -->References</h2>
 <ol>
 <li>
@@ -482,16 +482,16 @@ $$</p>
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/mcmc/" rel="tag">MCMC</a>
+			<a class="tags__link btn" href="/oldblog/tags/mcmc/" rel="tag">MCMC</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/gibbs-sampling/" rel="tag">Gibbs Sampling</a>
+			<a class="tags__link btn" href="/oldblog/tags/gibbs-sampling/" rel="tag">Gibbs Sampling</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/metropolis-hastings/" rel="tag">Metropolis Hastings</a>
+			<a class="tags__link btn" href="/oldblog/tags/metropolis-hastings/" rel="tag">Metropolis Hastings</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/posterior-approximation/" rel="tag">Posterior Approximation</a>
+			<a class="tags__link btn" href="/oldblog/tags/posterior-approximation/" rel="tag">Posterior Approximation</a>
 		</li>
 	</ul>
 </div>
@@ -501,7 +501,7 @@ $$</p>
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Kang Gyeonghun avatar" src="/mypic1.jpg" class="avatar" height="90" width="90">
+		<img alt="Kang Gyeonghun avatar" src="/oldblog/mypic1.jpg" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name"></span>
@@ -513,13 +513,13 @@ $$</p>
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/" rel="prev">
+		<a class="pager__link" href="/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
 			<p class="pager__title">(MCMC) Discrete-Time Markov Chain with Finite State Space</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/" rel="next">
+		<a class="pager__link" href="/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
 			<p class="pager__title">Bayesian Hierarchical Modeling and its Applications</p>
 		</a>
@@ -564,68 +564,68 @@ $$</p>
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/">Introduction to Rcpp and RcppArmadillo</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/">Introduction to Rcpp and RcppArmadillo</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
 		</ul>
 	</div>
 </div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaboost/" title="ADABOOST">ADABOOST</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cart/" title="CART">CART</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/clustering/" title="Clustering">Clustering</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/d-seperation/" title="D-seperation">D-seperation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/determinant/" title="Determinant">Determinant</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/frequentist/" title="Frequentist">Frequentist</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/jacobian/" title="Jacobian">Jacobian</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-cv/" title="k-CV">k-CV</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-means/" title="K-means">K-means</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kernel/" title="Kernel">Kernel</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kl-divergence/" title="KL divergence">KL divergence</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lasso/" title="Lasso">Lasso</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lda/" title="LDA">LDA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mcmc/" title="MCMC">MCMC</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mse/" title="MSE">MSE</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ols/" title="OLS">OLS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pca/" title="PCA">PCA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rcpp/" title="Rcpp">Rcpp</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ridge/" title="Ridge">Ridge</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/svm/" title="SVM">SVM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaboost/" title="ADABOOST">ADABOOST</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/cart/" title="CART">CART</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/clustering/" title="Clustering">Clustering</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/d-seperation/" title="D-seperation">D-seperation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/determinant/" title="Determinant">Determinant</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/frequentist/" title="Frequentist">Frequentist</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/jacobian/" title="Jacobian">Jacobian</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-cv/" title="k-CV">k-CV</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-means/" title="K-means">K-means</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kernel/" title="Kernel">Kernel</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kl-divergence/" title="KL divergence">KL divergence</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lasso/" title="Lasso">Lasso</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lda/" title="LDA">LDA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mcmc/" title="MCMC">MCMC</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mse/" title="MSE">MSE</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ols/" title="OLS">OLS</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/pca/" title="PCA">PCA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/rcpp/" title="Rcpp">Rcpp</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ridge/" title="Ridge">Ridge</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/svm/" title="SVM">SVM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
 	</div>
 </div>
 </aside>
@@ -640,7 +640,7 @@ $$</p>
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="/oldblog/js/menu.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>

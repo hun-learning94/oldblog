@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lagrangian Duality on Hun Learning</title>
-    <link>/tags/lagrangian-duality/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/lagrangian-duality/</link>
     <description>Recent content in Lagrangian Duality on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 Apr 2020 11:00:00 +0900</lastBuildDate><atom:link href="/tags/lagrangian-duality/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Apr 2020 11:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/lagrangian-duality/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Support Vector Machine 이해를 위한 Lagrangian Dual Problem 이해해보기</title>
-      <link>/posts/2020-04-17-support-vector-machine-%EC%9D%B4%ED%95%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-lagrangian-dual-problem/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-04-17-support-vector-machine-%EC%9D%B4%ED%95%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-lagrangian-dual-problem/</link>
       <pubDate>Fri, 17 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-04-17-support-vector-machine-%EC%9D%B4%ED%95%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-lagrangian-dual-problem/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-04-17-support-vector-machine-%EC%9D%B4%ED%95%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-lagrangian-dual-problem/</guid>
       <description>Optimization with inequality constraints 다음과 같은 최적화 문제를 생각해보자.
 $$ \begin{align*} \textbf{Primal Problem:}\quad minimize &amp;amp;\quad f_0(\mathbf{x}) \quad (\mathbf{x} \in \mathbb{R}^n, ;domain;\mathcal{D})\\\
 s.t. &amp;amp;\quad f_i(\mathbf{x}) \leq 0, \quad ^\forall i \in [m] \\\
@@ -23,10 +23,10 @@ s.t. &amp;amp;\quad f_i(\mathbf{x}) \leq 0, \quad ^\forall i \in [m] \\\
     
     <item>
       <title>ISL 09 Support Vector Machine</title>
-      <link>/posts/2020-01-26-isl-09-support-vector-machine/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-01-26-isl-09-support-vector-machine/</link>
       <pubDate>Sun, 26 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-01-26-isl-09-support-vector-machine/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-01-26-isl-09-support-vector-machine/</guid>
       <description>훈러닝 채널에 ISL 전 범위 유투브 강의 있습니다!</description>
     </item>
     

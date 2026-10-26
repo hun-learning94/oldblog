@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Multivariate Normal on Hun Learning</title>
-    <link>/tags/multivariate-normal/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/multivariate-normal/</link>
     <description>Recent content in Multivariate Normal on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2020 06:10:00 +0900</lastBuildDate><atom:link href="/tags/multivariate-normal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jul 2020 06:10:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/multivariate-normal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conjugate Prior for Multivariate Model</title>
-      <link>/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</link>
       <pubDate>Mon, 20 Jul 2020 06:10:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</guid>
       <description>library(ggplot2) library(cowplot) library(reshape) Multivariate Normal Model Consider a bivariate normal random variable $[y_1, y_2]^T$. The density is written as ($p=2$)
 $$ p(\mathbf{y}|\theta, \Sigma) = (\dfrac{1}{2\pi})^{-p/2}|\Sigma|^{-1/2} \exp{-\dfrac{1}{2}(\mathbf{y}-\theta)^T\Sigma^{-1}(\mathbf{y}-\theta)} $$
 where the parameter is $\theta = \begin{pmatrix} E[y_1]\\\ E[y_2] \end{pmatrix}$ and $\Sigma = \begin{pmatrix} E[y_1^2]-E[y_1]^2 &amp;amp; E[y_1y_2]-E[y_1]E[y_2]\\\
@@ -24,10 +24,10 @@ Few things worth mentioning for multivariate normal model
     
     <item>
       <title>03 Matrix Derivatives</title>
-      <link>/posts/2020-03-29-03-matrix-derivatives/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-03-29-03-matrix-derivatives/</link>
       <pubDate>Sun, 29 Mar 2020 09:20:00 +0900</pubDate>
       
-      <guid>/posts/2020-03-29-03-matrix-derivatives/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-03-29-03-matrix-derivatives/</guid>
       <description>훈러닝 채널에 벡터 및 행렬 미분 강의 있습니다!</description>
     </item>
     

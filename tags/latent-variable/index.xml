@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Latent Variable on Hun Learning</title>
-    <link>/tags/latent-variable/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/latent-variable/</link>
     <description>Recent content in Latent Variable on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2020 10:00:00 +0900</lastBuildDate><atom:link href="/tags/latent-variable/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Aug 2020 10:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/latent-variable/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Variational Inference and Bayesian Gaussian Mixture Model</title>
-      <link>/posts/2020-08-25-variational-inference/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-08-25-variational-inference/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-08-25-variational-inference/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-08-25-variational-inference/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EM Algorithm for Latent Variable Models</title>
-      <link>/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</link>
       <pubDate>Mon, 10 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</guid>
       <description>For an observed data $\mathbf{x}$, we might posit the existence of an unobserved data $\mathbf{z}$ and include it in model $p(\mathbf{x,z}\mid \theta)$. This is called a latent variable model. The question is, why bother? It turns out that in many cases, learning $\theta$ with the marginal log likelihood $p(\mathbf{x}\mid \theta)$ is hard, whereas learning with the joint likelihood with a complete data set $p(\mathbf{x,z}\mid \theta)$ is relatively easy. GMM is one such case.</description>
     </item>
     

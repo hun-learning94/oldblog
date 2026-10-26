@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Lasso on Hun Learning</title>
-    <link>/tags/lasso/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/lasso/</link>
     <description>Recent content in Lasso on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Apr 2020 12:00:00 +0900</lastBuildDate><atom:link href="/tags/lasso/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Apr 2020 12:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/lasso/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ridge와 Lasso, 그리고 베이지안 해석</title>
-      <link>/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</link>
       <pubDate>Tue, 07 Apr 2020 12:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</guid>
       <description>References  Pattern Recognition and Machine Learning, Bishop, 2006 Introduction to Statistical Learning, James et al, 2013  </description>
     </item>
     
     <item>
       <title>ISL 06 Model Selection and Regularization</title>
-      <link>/posts/2020-01-23-isl-06-model-selection-and-regularization/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-01-23-isl-06-model-selection-and-regularization/</link>
       <pubDate>Thu, 23 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-01-23-isl-06-model-selection-and-regularization/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-01-23-isl-06-model-selection-and-regularization/</guid>
       <description>훈러닝 채널에 ISL 전 범위 유투브 강의 있습니다!</description>
     </item>
     

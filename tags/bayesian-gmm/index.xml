@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayesian GMM on Hun Learning</title>
-    <link>/tags/bayesian-gmm/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/bayesian-gmm/</link>
     <description>Recent content in Bayesian GMM on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Aug 2020 10:00:00 +0900</lastBuildDate><atom:link href="/tags/bayesian-gmm/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 25 Aug 2020 10:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/bayesian-gmm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Variational Inference and Bayesian Gaussian Mixture Model</title>
-      <link>/posts/2020-08-25-variational-inference/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-08-25-variational-inference/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-08-25-variational-inference/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-08-25-variational-inference/</guid>
       <description></description>
     </item>
     

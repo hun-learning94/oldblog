@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Logistic Regression on Hun Learning</title>
-    <link>/tags/logistic-regression/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/logistic-regression/</link>
     <description>Recent content in Logistic Regression on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 15 Jun 2020 09:10:00 +0900</lastBuildDate><atom:link href="/tags/logistic-regression/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 15 Jun 2020 09:10:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/logistic-regression/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Logit Regression과 SVM은 Loss function의 차이</title>
-      <link>/posts/2020-06-15-logit-svm/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-06-15-logit-svm/</link>
       <pubDate>Mon, 15 Jun 2020 09:10:00 +0900</pubDate>
       
-      <guid>/posts/2020-06-15-logit-svm/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-06-15-logit-svm/</guid>
       <description>학교 과제로 썼던 자료인데 조금 다듬어서 블로그에 올립니다.
 I. Intro 2범주 범주형자료분석에서 여러 개의 연속형 응답변수가 주어졌을 때 쓸 수 있는 확률 모형의 대표적인 예는 로지스틱 회귀가 있다. 모델의 계수에 대한 해석이 가능한 Generalized Linear Model의 틀 안에 있기 때문에 결과에 대한 해석이 가능한 장점이 있다. 로지스틱 회귀는 로그 오드에 대한 선형식으로 Likelihood를 세워 MLE 방식으로 추정하는 함수적 추정 방법이다. 그러나 범주형자료분석에서 만일 목적이 예측이라면 해석이 불가능한 비모수적 함수 추정 방법을 쓸 수 있는데, 그 대표적인 예가 옆 동네 컴퓨터 공학과에서 처음 개발한 Support Vector Machine 방법이다.</description>
     </item>
     
     <item>
       <title>Classification을 위한 선형 방법들</title>
-      <link>/posts/2020-04-10/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-04-10/</link>
       <pubDate>Fri, 10 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-04-10/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-04-10/</guid>
       <description>1. Classification and Test Error Rate 데이터 $x_i$에 대해 target 변수 $t_i$가 범주형 자료인 경우 (남자/여자, 성공/실패, 양념/간장/후라이드) 우리가 세우는 예측 모델 $f$을 Classifier라고 한다.
 $$ Classifier:; \hat{t_i} = f(x_i)$$
 당연히 우리의 모델 $f$는 종종 틀릴 것이다. Regression에서는 우리가 Error를 예측값과 실제값 사이의 거리의 제곱을 오차로 정의했다면, Classification은 좀 더 간단하게 전체 데이터에서 틀리게 분류된 횟수로 Error를 정의한다. 자세히 말하자면 아래와 같은 Indicator function을 만들어놓고
@@ -31,10 +31,10 @@ $$ Classification;Error:; I(t_i \neq \hat{t_i}) = \begin{cases} 0 &amp;amp; \tex
     
     <item>
       <title>ISL 04 Classification</title>
-      <link>/posts/2020-01-21-isl-04-classification/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-01-21-isl-04-classification/</link>
       <pubDate>Tue, 21 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-01-21-isl-04-classification/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-01-21-isl-04-classification/</guid>
       <description>훈러닝 채널에 ISL 전 범위 유투브 강의 있습니다!</description>
     </item>
     

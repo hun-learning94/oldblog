@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kullback-Leibler Divergence on Hun Learning</title>
-    <link>/tags/kullback-leibler-divergence/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/kullback-leibler-divergence/</link>
     <description>Recent content in Kullback-Leibler Divergence on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Aug 2020 11:00:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/kullback-leibler-divergence/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hun-learning94.github.io/oldblog/tags/kullback-leibler-divergence/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Note on Kullback-Leibler Divergence</title>
-      <link>/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</link>
       <pubDate>Mon, 10 Aug 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</guid>
       <description>How do we quantify an amount of information that some data $x$ contains? If the data is pretty much expected than it tells nothing new to us. But if it is so rare then it has some value. In this sense, we can think of an amount of information as a &amp;ldquo;degree of surprise&amp;rdquo;, and define
 $$ \text{information content of data $x$:}\quad h(x) = -\log p(x) $$ where the logarithm ensures $h(x,y)=h(x)+h(y) \Leftrightarrow p(x,y)=p(x)p(y)$, and the negative sign makes $h(x)\geq 0$.</description>
     </item>

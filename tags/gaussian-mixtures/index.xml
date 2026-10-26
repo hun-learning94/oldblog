@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Gaussian Mixtures on Hun Learning</title>
-    <link>/tags/gaussian-mixtures/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/gaussian-mixtures/</link>
     <description>Recent content in Gaussian Mixtures on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 07:00:00 +0900</lastBuildDate><atom:link href="/tags/gaussian-mixtures/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Aug 2020 07:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/gaussian-mixtures/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mixtures of Gaussians and EM algorithm</title>
-      <link>/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</link>
       <pubDate>Mon, 10 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</guid>
       <description>Mixtures of Gaussians (GMM) GMM as a joint distribution Suppose a random vector $\mathbf{x}$ follows a $K$ Gaussian mixture distribution,
 $$ p(\mathbf{x}) = \sum_{k=1}^K \pi_k N(\mathbf{x}\mid \boldsymbol{\mu_k, \Sigma_k}) $$ Knowing the distribution means we have complete information about the set of parameters $\pi_k, \boldsymbol{\mu_k, \Sigma_k}$ for all $k$. Let us say that the parameter $\pi_k$ is shrouded, and instead we have a random variable $\mathbf{z}$ with $1-to-K$ coding where exactly one of $K$ elements (say $z_k$) be $1$ while all else are $0$.</description>
     </item>

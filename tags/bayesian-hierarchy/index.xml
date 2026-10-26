@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayesian Hierarchy on Hun Learning</title>
-    <link>/tags/bayesian-hierarchy/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/bayesian-hierarchy/</link>
     <description>Recent content in Bayesian Hierarchy on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 08:00:00 +0900</lastBuildDate><atom:link href="/tags/bayesian-hierarchy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2020 08:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/bayesian-hierarchy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bayesian Hierarchical Modeling and its Applications</title>
-      <link>/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</link>
       <pubDate>Mon, 03 Aug 2020 08:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</guid>
       <description>Review: Full conditional posterior for normal likelihood 일단 정규분포의 semi-conjugate prior에 대한 내용을 다시 정리해보자.
  $p(\theta\mid\sigma^2, \mathbf{D}) = dnorm(\theta, \mu_n, \tau_n^2)$ $\mu_n= \dfrac{1/\tau_0^2}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\mu_0 + \dfrac{\frac{n}{\sigma^2}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\bar{x}$ $\tau_n^2 = \dfrac{1}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}$ $p(\sigma^2\mid\theta, \mathbf{D}) = dinv\Gamma(\sigma^2, v_n, \dfrac{1}{v_n}(v_0\sigma_0^2+\sum (y_i-\theta)^2)$  Two Group Comparison: Math scores library(ggplot2) library(cowplot) school1 = dget(&amp;#39;http://www2.stat.duke.edu/~pdh10/FCBS/Inline/y.school1&amp;#39;) school2 = dget(&amp;#39;http://www2.stat.duke.edu/~pdh10/FCBS/Inline/y.school2&amp;#39;) df = data.frame(school = c(rep(&amp;#39;s1&amp;#39;, length(school1)),rep(&amp;#39;s2&amp;#39;, length(school2))), score = c(school1, school2) ) ggplot(df, aes(x=school, y=score))+ geom_boxplot(aes(fill=school))+ ggtitle(&amp;#39;Math scores comparison&amp;#39;)+ theme_cowplot() 통계학이 필요한 이유는 이런 &amp;ldquo;애매한&amp;rdquo; 차이 때문이다.</description>
     </item>

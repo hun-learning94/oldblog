@@ -2,69 +2,69 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Probability on Hun Learning</title>
-    <link>/tags/probability/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/probability/</link>
     <description>Recent content in Probability on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Aug 2020 08:00:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/probability/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hun-learning94.github.io/oldblog/tags/probability/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bayesian Hierarchical Modeling and its Applications</title>
-      <link>/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</link>
       <pubDate>Mon, 03 Aug 2020 08:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</guid>
       <description>Review: Full conditional posterior for normal likelihood 일단 정규분포의 semi-conjugate prior에 대한 내용을 다시 정리해보자.
  $p(\theta\mid\sigma^2, \mathbf{D}) = dnorm(\theta, \mu_n, \tau_n^2)$ $\mu_n= \dfrac{1/\tau_0^2}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\mu_0 + \dfrac{\frac{n}{\sigma^2}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\bar{x}$ $\tau_n^2 = \dfrac{1}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}$ $p(\sigma^2\mid\theta, \mathbf{D}) = dinv\Gamma(\sigma^2, v_n, \dfrac{1}{v_n}(v_0\sigma_0^2+\sum (y_i-\theta)^2)$  Two Group Comparison: Math scores library(ggplot2) library(cowplot) school1 = dget(&amp;#39;http://www2.stat.duke.edu/~pdh10/FCBS/Inline/y.school1&amp;#39;) school2 = dget(&amp;#39;http://www2.stat.duke.edu/~pdh10/FCBS/Inline/y.school2&amp;#39;) df = data.frame(school = c(rep(&amp;#39;s1&amp;#39;, length(school1)),rep(&amp;#39;s2&amp;#39;, length(school2))), score = c(school1, school2) ) ggplot(df, aes(x=school, y=score))+ geom_boxplot(aes(fill=school))+ ggtitle(&amp;#39;Math scores comparison&amp;#39;)+ theme_cowplot() 통계학이 필요한 이유는 이런 &amp;ldquo;애매한&amp;rdquo; 차이 때문이다.</description>
     </item>
     
     <item>
       <title>(MCMC) 베이지안 사후분포 근사를 위한 MCMC 방법론</title>
-      <link>/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</link>
       <pubDate>Mon, 03 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</guid>
       <description>0. 개요 베이지안에서 모수에 대한 추론은 곧 모수의 분포를 구하는 것이다. 미지의 수에 대한 불확실성을 확률로 표현하였으니, 베이즈 정리를 이용해 데이터의 불확실성과 거짓말처럼 깔끔하게 같이 섞을 수 있기 때문이다. 그러나 아쉽게도 그 결과로 나오는 분포는 항상 깔끔하지만은 않다. 물론 데이터에 대한 모델을 지수분포족으로 한정하고, 그에 대응하는 또다른 특별한 지수분포족 분포함수를 사용하면, 사후분포의 모수를 쉽게 구할 수 있는데, 이러한 경우를 Prior-Posterior 간에 Conjugacy가 있다고 한다. 그러나 많은 경우 복잡한 데이터에 맞게 모델을 만들다 보면 해석적이지 않은 사후분포에 맞닥뜨리게 된다.</description>
     </item>
     
     <item>
       <title>(MCMC) Discrete-Time Markov Chain with Finite State Space</title>
-      <link>/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</link>
       <pubDate>Mon, 03 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</guid>
       <description>0. 이걸 왜 배우는데? 저번 시간에 간략히 살펴본 Gibbs Sampler는 MCMC(Markov Chain Monte Carlo), 즉 마코브 체인을 이용한 Posterior 분포 시뮬레이션 방법 중 하나인데, 이 MCMC 방법들이 도대체가 왜 잘 먹히는 지를 알려면 아무래도 마코브 체인에 대한 배경지식이 필요하다. 어떤 분포를 MCMC로 근사한다는 것은 모수 공간의 어떤 포인트에서 다른 포인트로 총총 점프하는 그 과정을 &amp;ldquo;잘&amp;rdquo; 구현해서, 마치 그 샘플들이 내가 모르는 그 분포에서 나온 것과 같다고 퉁치는 거다.
 MCMC 이름의 의미</description>
     </item>
     
     <item>
       <title>Bayesian Approach: 하나의 데이터, 임의의 모수</title>
-      <link>/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</link>
       <pubDate>Mon, 20 Jul 2020 05:30:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</guid>
       <description>0. 생각하는 로봇은 베이지안이다! 주변 환경을 인지하고 목적지를 찾는 로봇을 생각해보자. 목적지로 가는 경로에는 수많은 경우의 수가 있다. 이 경로에서 로봇은 시시각각 환경을 파악해서, 즉 데이터를 수집해서 가장 안전한 길을 택해야 한다. 전방에 위험징후를 포착했다. 로봇은 그 방향으로 가는 길이 위험하다고 판단해 경로를 변경해야 한다. 자 그러면 이걸 어떻게 코딩할까? 각각의 길이 위험할 확률 $p(road_i=unsafe)$과, 각각의 길에서 위험한 징후가 포착될 확률 $p(sign\mid road_i=unsafe)$ 을 고려하여, 위험할 확률 $p(road_i = unsafe \mid sign)$ 을 다시 계산해야한다.</description>
     </item>
     
     <item>
       <title>07 빈도론적 귀무가설유의수준검정(NHST)의 문제점</title>
-      <link>/posts/bayesian-ml/week1/07-%EB%B9%88%EB%8F%84%EB%A1%A0%EC%A0%81-%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4%EC%9C%A0%EC%9D%98%EC%88%98%EC%A4%80%EA%B2%80%EC%A0%95nhst%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/07-%EB%B9%88%EB%8F%84%EB%A1%A0%EC%A0%81-%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4%EC%9C%A0%EC%9D%98%EC%88%98%EC%A4%80%EA%B2%80%EC%A0%95nhst%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90/</link>
       <pubDate>Mon, 20 Jul 2020 05:20:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/07-%EB%B9%88%EB%8F%84%EB%A1%A0%EC%A0%81-%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4%EC%9C%A0%EC%9D%98%EC%88%98%EC%A4%80%EA%B2%80%EC%A0%95nhst%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/07-%EB%B9%88%EB%8F%84%EB%A1%A0%EC%A0%81-%EA%B7%80%EB%AC%B4%EA%B0%80%EC%84%A4%EC%9C%A0%EC%9D%98%EC%88%98%EC%A4%80%EA%B2%80%EC%A0%95nhst%EC%9D%98-%EB%AC%B8%EC%A0%9C%EC%A0%90/</guid>
       <description>1. 빈도론적 추론의 병폐 자 이제 빈도통계론의 논리도 이해했고 그 끝판왕인 MLE와 LRT도 봤습니다. 지금부터는 빈도론적 통계 추론, 그 중에서도 검정 (NHST)이 가진 &amp;ldquo;병폐&amp;quot;들에 대해서 살펴보겠습니다. 앞서 잠깐 봤는데, 여기서는 좀 더 자세하게 다뤄보겠습니다.
 1) Trigger Happy: $p(D \mid H_0)$만 보고 $H_0$을 기각함 $p(D\mid H_0)$이 굉장히 작아야지만 귀무가설을 기각하는 것이 얼핏 보면 굉장히 보수적으로 보이지만, 사실 이런 식으로 세팅을 해놓으면 &amp;ldquo;귀무가설에 반대되는 evidence&amp;quot;만 반영하게 되지, 귀무가설에 좋은 evidence는 절대 반영을 못함.</description>
     </item>
     
     <item>
       <title>06 Maximum Likelihood Theory</title>
-      <link>/posts/bayesian-ml/week1/06-maximum-likelihood-theory/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/06-maximum-likelihood-theory/</link>
       <pubDate>Mon, 20 Jul 2020 05:10:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/06-maximum-likelihood-theory/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/06-maximum-likelihood-theory/</guid>
       <description>지금까지의 논의를 종합해보면 다음과 같습니다.
   빈도통계학 추론은 평행우주 데이터 ${D^{(s)}}_{s=1}^{\infty}$에서의 Sampling Distrubtion $\delta(D^{(s)}) \sim p(.\mid \theta^*)$에 달렸다.
   모수 $\theta$에 대한 추정량 $\hat{\theta} = \delta(D^{(s)})$의 결정은 다음의 사항을 고려해야 한다.
@@ -75,10 +75,10 @@ MCMC 이름의 의미</description>
     
     <item>
       <title>05 Frequentist Optimality: 어떤 추정량을 쓸 것인가?</title>
-      <link>/posts/bayesian-ml/week1/05-frequentist-optimality-%EC%96%B4%EB%96%A4-%EC%B6%94%EC%A0%95%EB%9F%89%EC%9D%84-%EC%93%B8-%EA%B2%83%EC%9D%B8%EA%B0%80/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/05-frequentist-optimality-%EC%96%B4%EB%96%A4-%EC%B6%94%EC%A0%95%EB%9F%89%EC%9D%84-%EC%93%B8-%EA%B2%83%EC%9D%B8%EA%B0%80/</link>
       <pubDate>Mon, 20 Jul 2020 05:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/05-frequentist-optimality-%EC%96%B4%EB%96%A4-%EC%B6%94%EC%A0%95%EB%9F%89%EC%9D%84-%EC%93%B8-%EA%B2%83%EC%9D%B8%EA%B0%80/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/05-frequentist-optimality-%EC%96%B4%EB%96%A4-%EC%B6%94%EC%A0%95%EB%9F%89%EC%9D%84-%EC%93%B8-%EA%B2%83%EC%9D%B8%EA%B0%80/</guid>
       <description>빈도론자들의 세계관을 다시 한번 복기해봅시다. 데이터의 sampling density를 모수 $\theta$로 결정되는 확률분포함수로 가정하였고, $\theta$를 모를 때 이 sampling density를 데이터에 의해 정해지는 $\theta$의 식인 Likelihood로 해석합니다. 비록 우리가 가진 샘플은 $D^{(s)}$ 하나이지만 내가 모르는 수많은 평행우주에 똑같은 확률실험의 결과들의 앙상블인 ${D^{(s)}}_{s=1}^{\infty}$가 있다고 믿어봅시다.
 $$ \begin{align} \text{Ensemble of Data:}\quad &amp;amp; D_{s=1}^{\infty} = [x_1^{(s)}, x_2^{(s)}, &amp;hellip;, x_n^{(s)}]_{s=1}^{\infty}\\\
 \text{Sampling Density of $D^{(s)}$ (iid):}\quad&amp;amp; f(D^{(s)}|\theta) = \prod_{i=1}^nf(x_i^{(s)}|\theta) \quad (x_i^{(s)}\in \mathcal{X}, \theta \in \Omega)\\\
@@ -87,10 +87,10 @@ $$ \begin{align} \text{Ensemble of Data:}\quad &amp;amp; D_{s=1}^{\infty} = [x_1
     
     <item>
       <title>04 Frequentist Approach 하나의 모수, 여러 개의 데이터</title>
-      <link>/posts/bayesian-ml/week1/04-frequentist-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%AA%A8%EC%88%98-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/04-frequentist-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%AA%A8%EC%88%98-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0/</link>
       <pubDate>Mon, 20 Jul 2020 04:50:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/04-frequentist-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%AA%A8%EC%88%98-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/04-frequentist-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%AA%A8%EC%88%98-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0/</guid>
       <description>이제 대략적인 소개는 했으니 수식을 사용해 좀 더 자세히 설명해볼게요. 일단 데이터 형성 과정에 대한 우리의 가정을 Likelihood로 표현해봅시다.
 $$ \begin{align} \text{Data (iid):}\quad &amp;amp;D = [x_1, x_2, &amp;hellip;, x_n]\\\
 \text{Sampling Density of $D$:}\quad&amp;amp; f(D|\theta) = \prod_{i=1}^nf(x_i|\theta) \quad (x_i\in \mathcal{X}, \theta \in \Omega)\\\
@@ -100,29 +100,29 @@ $$ \begin{align} \text{Data (iid):}\quad &amp;amp;D = [x_1, x_2, &amp;hellip;, x
     
     <item>
       <title>03 빈도통계학과 베이즈통계학: 철학의 차이</title>
-      <link>/posts/bayesian-ml/week1/03-%EB%B9%88%EB%8F%84%ED%86%B5%EA%B3%84%ED%95%99%EA%B3%BC-%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99-%EC%B2%A0%ED%95%99%EC%9D%98-%EC%B0%A8%EC%9D%B4/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/03-%EB%B9%88%EB%8F%84%ED%86%B5%EA%B3%84%ED%95%99%EA%B3%BC-%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99-%EC%B2%A0%ED%95%99%EC%9D%98-%EC%B0%A8%EC%9D%B4/</link>
       <pubDate>Mon, 20 Jul 2020 04:40:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/03-%EB%B9%88%EB%8F%84%ED%86%B5%EA%B3%84%ED%95%99%EA%B3%BC-%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99-%EC%B2%A0%ED%95%99%EC%9D%98-%EC%B0%A8%EC%9D%B4/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/03-%EB%B9%88%EB%8F%84%ED%86%B5%EA%B3%84%ED%95%99%EA%B3%BC-%EB%B2%A0%EC%9D%B4%EC%A6%88%ED%86%B5%EA%B3%84%ED%95%99-%EC%B2%A0%ED%95%99%EC%9D%98-%EC%B0%A8%EC%9D%B4/</guid>
       <description>이제부터는 inference와 prediction 문제를 해결하는 통계학의 두 가지 접근법을 차례로 살펴보겠습니다. 첫 번째는 빈도통계학 접근법으로, 학부 통계학에서 가장 많이 접해본 내용입니다. 사실 그냥 통입 통방 수통1 수통2가 전부다 빈도통계학을 위한 준비 + 논리 이해하기입니다. 그래서 베이즈통계 안 듣고 졸업하면 통계학을 반쪽만 알고 가는거에요. 두 번째는 베이지안 접근법인데, 두 방법의 큰 차이점은 모수에 대한 해석의 차이라고 생각해요. 빈도통계학 접근법에서 추론이란 알지는 못하지만 단 하나의 상수로 존재하는 참 모수 $\theta$ 찾기에요. 우리는 한 번 확률 실험으로 얻은 데이터를 가지고 모수를 찾아야하는 참 안습한 상황에 처해있지요.</description>
     </item>
     
     <item>
       <title>02 통계학의 목적: Inference와 Prediction</title>
-      <link>/posts/bayesian-ml/week1/02-%ED%86%B5%EA%B3%84%ED%95%99%EC%9D%98-%EB%AA%A9%EC%A0%81-inference%EC%99%80-prediction/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/02-%ED%86%B5%EA%B3%84%ED%95%99%EC%9D%98-%EB%AA%A9%EC%A0%81-inference%EC%99%80-prediction/</link>
       <pubDate>Mon, 20 Jul 2020 04:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/02-%ED%86%B5%EA%B3%84%ED%95%99%EC%9D%98-%EB%AA%A9%EC%A0%81-inference%EC%99%80-prediction/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/02-%ED%86%B5%EA%B3%84%ED%95%99%EC%9D%98-%EB%AA%A9%EC%A0%81-inference%EC%99%80-prediction/</guid>
       <description>이처럼 데이터는 알고 모수는 모르는 상황에서, 우리는 오직 하나의 Likelihood 함수만 관측할 수 있습니다. 이 Likelihood 함수를 가지고 통계학자들이 하고 싶은 일은 두 가지로 요약할 수 있습니다.
  Inference: 데이터 $\mathbf{x}$를 바탕으로 모수 $\theta$에 대해 무엇을 말할 수 있는가? Prediction: 데이터 $\mathbf{x}$를 바탕으로 새로운 데이터 $x_{new}$를 예측해보자.  동전의 예를 생각해보면, inference는 이 동전이 과연 fair한가 아닌가, 즉 앞면이 나올 확률이 무엇인가에 대해 답하고자 하는 것이며, prediction은 그렇다면 다음 시행에서 앞면이 나올지 뒷면이 나올지 예측하는 것입니다.</description>
     </item>
     
     <item>
       <title>01 Probability Densities와 Likelihood</title>
-      <link>/posts/bayesian-ml/week1/01-probability-densities%EC%99%80-likelihood/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/01-probability-densities%EC%99%80-likelihood/</link>
       <pubDate>Mon, 20 Jul 2020 03:43:58 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/01-probability-densities%EC%99%80-likelihood/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/01-probability-densities%EC%99%80-likelihood/</guid>
       <description>어떤 확률 변수 $x_i$가 가질 수 있는 값들을 sample space $\mathcal{X}$라고 하고, 그 값들의 분포는 어떤 모수 $\theta$에 의해 완전히 결정되는 함수 $f(x\mid\theta)$라고 생각해봅시다(예컨대 이항분포나 분산이 주어진 정규분포 등을 생각해볼 수 있겠습니다). 모수 $\theta$가 가질 수 있는 값들은 parameter space $\mathcal{\Omega}$라고 합니다. (이때 모수 $\theta$는 스칼라가 아니라 벡터일 수도 있습니다. 여기서는 스칼라인 경우만 일단 생각해볼게요.)
 $$ \text{Sampling Density of $x_i$:}\quad f(x|\theta) \quad (x\in \mathcal{X}, \theta \in \Omega) $$
 이때 함수 $f$를 probability density라고 합니다.</description>

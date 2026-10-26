@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayes Rule on Hun Learning</title>
-    <link>/tags/bayes-rule/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/bayes-rule/</link>
     <description>Recent content in Bayes Rule on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2020 05:30:00 +0900</lastBuildDate><atom:link href="/tags/bayes-rule/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jul 2020 05:30:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/bayes-rule/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bayesian Approach: 하나의 데이터, 임의의 모수</title>
-      <link>/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</link>
       <pubDate>Mon, 20 Jul 2020 05:30:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</guid>
       <description>0. 생각하는 로봇은 베이지안이다! 주변 환경을 인지하고 목적지를 찾는 로봇을 생각해보자. 목적지로 가는 경로에는 수많은 경우의 수가 있다. 이 경로에서 로봇은 시시각각 환경을 파악해서, 즉 데이터를 수집해서 가장 안전한 길을 택해야 한다. 전방에 위험징후를 포착했다. 로봇은 그 방향으로 가는 길이 위험하다고 판단해 경로를 변경해야 한다. 자 그러면 이걸 어떻게 코딩할까? 각각의 길이 위험할 확률 $p(road_i=unsafe)$과, 각각의 길에서 위험한 징후가 포착될 확률 $p(sign\mid road_i=unsafe)$ 을 고려하여, 위험할 확률 $p(road_i = unsafe \mid sign)$ 을 다시 계산해야한다.</description>
     </item>
     

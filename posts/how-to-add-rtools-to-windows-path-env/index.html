@@ -10,7 +10,7 @@
 		<meta property="og:title" content="Rtools를 윈도우 환경변수 PATH에 추가하는 방법" />
 <meta property="og:description" content="How to add Rtools to windows PATH environment variable?" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/how-to-add-rtools-to-windows-path-env/" />
+<meta property="og:url" content="/oldblog/posts/how-to-add-rtools-to-windows-path-env/" />
 <meta property="article:published_time" content="2020-09-06T10:00:00+09:00" />
 <meta property="article:modified_time" content="2020-09-06T10:00:00+09:00" />
 
@@ -27,9 +27,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/oldblog/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/oldblog/favicon.ico">
 		
 </head>
 <body class="body">
@@ -38,9 +38,9 @@
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Hun Learning" rel="home">
+		<a class="logo__link" href="/oldblog/" title="Hun Learning" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/mypic2.jpg">
+					<img class="logo__img" src="/oldblog/mypic2.jpg">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">Hun Learning</div>
 					<div class="logo__tagline">In Search Of The Truth Projected Onto A Finite Dimension</div>
@@ -54,7 +54,7 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/about/">
+			<a class="menu__link" href="/oldblog/posts/about/">
 				
 				<span class="menu__text">Author</span>
 				
@@ -111,7 +111,7 @@
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Kang Gyeonghun</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-06T10:00:00&#43;09:00">2020-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/r/" rel="category">R</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-06T10:00:00&#43;09:00">2020-09-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/oldblog/categories/r/" rel="category">R</a>
 	</span>
 </div></div>
 		</header><div class="content post__content clearfix">
@@ -132,9 +132,9 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 <h3 id="br환경변수가-뭐냐-what-is-the-environment-variable"><!-- raw HTML omitted -->환경변수가 뭐냐? What is the environment variable?</h3>
 <p>환경변수란 운영체제나 사용자 정보 등 &ldquo;환경&quot;에 관한 모든 변수들을 말한다. 프로그램을 컴푸터에 깔면 이 프로그램은 여기가 어디지? 어디로 가야하지? 라는 정보를 이 환경변수라는 것들을 보면서 파악한다고 보면 될 것이다. 환경변수를 보는 방법은, cmd 창을 켜고 그냥 env라고 누르면 시꺼먼 창에 무언가 주루룩 나오는데, 걔네들이 다 환경변수이다. 전부 다 <code>APPDATA=C:\Users\gyeon\AppData\Roaming</code> 이런 식으로 변수=값 형식으로 되어있다. 여기서 주목할 변수는 바로 <code>PATH</code>이다.</p>
 <p>Environment variable refers to a set of all the variables that have information about the &ldquo;environment&rdquo; of your PC, e.g. OS, username and etc. When you install any executable program in your PC, that program acquires necessary info to figure out where it is and where to navigate from that environment variable. To see yours, open command prompt and type &ldquo;env&rdquo;. Among these variables, what is relevant to us is the highlighted one <code>PATH</code>.</p>
-<p><img src="/posts/image01.png" alt=""></p>
+<p><img src="/oldblog/posts/image01.png" alt=""></p>
 <p>You can access <code>PATH</code> in R console too with <code>Sys.getenv()['PATH']</code></p>
-<p><img src="/posts/image02.png" alt=""></p>
+<p><img src="/oldblog/posts/image02.png" alt=""></p>
 <h3 id="br"><!-- raw HTML omitted --></h3>
 <h3 id="rtools-설치-및-환경변수-추가하기-step-by-step-instruction">Rtools 설치 및 환경변수 추가하기 (step by step instruction)</h3>
 <h4 id="br1-rtools-설치하기-rtools-install"><!-- raw HTML omitted -->1. Rtools 설치하기 (Rtools Install)</h4>
@@ -144,15 +144,15 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 <h4 id="br2-path에-추가하기-adding-to-path"><!-- raw HTML omitted -->2. <code>PATH</code>에 추가하기 (Adding to PATH)</h4>
 <p>위에 링크에 방법을 소개하고 있긴 한데 그냥 제어판 들어가서 직접 설정하는 방법을 택하자. 윈도우에서 <strong>제어판 &gt; 시스템 &gt; 고급 시스템 설정</strong>을 클릭하면 다음과 같은 창이 뜬다. 여기서 환경변수 버튼을 눌러보자. 그리고 화면에 나온 대로 클릭하자.</p>
 <p>The link above does have instruction on adding Rtools to PATH, but I chose a sure-fire method which is to use control panel yourself. (If unsure, always prefer to click click click to writing some code that can mess up good) Navigate to <strong>Control Panel &gt; System &gt; Adv system setting</strong>  and click environment variable button below and proceed as follows;</p>
-<p><img src="/posts/image03.png" alt=""></p>
-<p><img src="/posts/image04.png" alt=""></p>
-<p><img src="/posts/image05-1.png" alt=""></p>
+<p><img src="/oldblog/posts/image03.png" alt=""></p>
+<p><img src="/oldblog/posts/image04.png" alt=""></p>
+<p><img src="/oldblog/posts/image05-1.png" alt=""></p>
 <p>여기서 찾아보기를 눌러 경로 <code>C:\rtools40\4.0\usr\bin</code>를 추가해줘야한다. <strong>(왜냐면 이 경로에 <code>make</code>파일이 있기 때문이다. 에러를 잘 보면 <code>make</code>파일이 없다고 징징거릴거다. R콘솔이 경로를 못 찾겠다는 말이다.)</strong> 그러면 화면처럼 맨 밑에 추가된 경로가 보인다.</p>
 <p>Now you should click the browse button and add the path <code>C:\rtools40\4.0\usr\bin</code> which has just been created after Rtools installation. <strong>If you paid attention, you might have noticed that in the Rmarkdown knit error message there was something that went roughly as &ldquo;cannot find file <code>make</code>&hellip;&rdquo;.</strong> <strong>What the console told you is that it failed to find that very path we just added because it was NOT there before.</strong> Once you added the path you would see the path loaded good in the last line as the picture above.</p>
-<p><img src="/posts/image07.png" alt=""></p>
+<p><img src="/oldblog/posts/image07.png" alt=""></p>
 <h4 id="br3-문제-해결-확인-restart-rstudio-and-knit-again"><!-- raw HTML omitted -->3. 문제 해결 확인 (Restart Rstudio and knit again)</h4>
 <p>Rstudio를 다시 키고 나서 knit을 다시 돌리면 문제 해결! Boom!</p>
-<p><img src="/posts/image05.png" alt=""></p>
+<p><img src="/oldblog/posts/image05.png" alt=""></p>
 <h4 id="br참고-rendering-latex-to-pdf-in-rmarkdown"><!-- raw HTML omitted -->참고: Rendering Latex to PDF in Rmarkdown</h4>
 <p>가끔 Rmarkdown에서 Latex 수식을 썼을 때 knit가 되지 않을 때가 있을 것이다. 그때는 당황하지말고 침착히 <code>tinytex::install_tinytex()</code>을 콘솔에 입력하면 된다. 시간이 걸린다. 설치 후 다시 시작하면 제대로 수식이 pdf로 나온다.</p>
 <p>If you experience error rendering Rmarkdown file with Latex to pdf, just type in the console the command <code>tinytex::install_tinytex()</code> and restart Rstudio.</p>
@@ -164,7 +164,7 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 <li><a href="https://bookdown.org/yihui/rmarkdown/language-engines.html#rcpp">https://bookdown.org/yihui/rmarkdown/language-engines.html#rcpp</a> (how to use Rcpp in Rmarkdown)</li>
 </ul>
 <h3 id="brsession-info"><!-- raw HTML omitted -->Session info</h3>
-<p><img src="/posts/image06.png" alt=""></p>
+<p><img src="/oldblog/posts/image06.png" alt=""></p>
 
 		</div>
 		<footer class="post__footer">
@@ -173,7 +173,7 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/rcpp/" rel="tag">Rcpp</a>
+			<a class="tags__link btn" href="/oldblog/tags/rcpp/" rel="tag">Rcpp</a>
 		</li>
 	</ul>
 </div>
@@ -183,7 +183,7 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Kang Gyeonghun avatar" src="/mypic1.jpg" class="avatar" height="90" width="90">
+		<img alt="Kang Gyeonghun avatar" src="/oldblog/mypic1.jpg" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name">About Kang Gyeonghun</span>
@@ -195,7 +195,7 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/posts/2020-08-25-variational-inference/" rel="prev">
+		<a class="pager__link" href="/oldblog/posts/2020-08-25-variational-inference/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
 			<p class="pager__title">Variational Inference and Bayesian Gaussian Mixture Model</p>
 		</a>
@@ -240,68 +240,68 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-11-bayesian-networks-directed-acyclical-graphs/">Bayesian Networks (Directed Acyclical Graphs)</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-11-bayesian-networks-directed-acyclical-graphs/">Bayesian Networks (Directed Acyclical Graphs)</a></li>
 		</ul>
 	</div>
 </div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaboost/" title="ADABOOST">ADABOOST</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cart/" title="CART">CART</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/clustering/" title="Clustering">Clustering</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/d-seperation/" title="D-seperation">D-seperation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/determinant/" title="Determinant">Determinant</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/frequentist/" title="Frequentist">Frequentist</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/jacobian/" title="Jacobian">Jacobian</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-cv/" title="k-CV">k-CV</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-means/" title="K-means">K-means</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kernel/" title="Kernel">Kernel</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kl-divergence/" title="KL divergence">KL divergence</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lasso/" title="Lasso">Lasso</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lda/" title="LDA">LDA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mcmc/" title="MCMC">MCMC</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mse/" title="MSE">MSE</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ols/" title="OLS">OLS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pca/" title="PCA">PCA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rcpp/" title="Rcpp">Rcpp</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ridge/" title="Ridge">Ridge</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/svm/" title="SVM">SVM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaboost/" title="ADABOOST">ADABOOST</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/cart/" title="CART">CART</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/clustering/" title="Clustering">Clustering</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/d-seperation/" title="D-seperation">D-seperation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/determinant/" title="Determinant">Determinant</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/frequentist/" title="Frequentist">Frequentist</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/jacobian/" title="Jacobian">Jacobian</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-cv/" title="k-CV">k-CV</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-means/" title="K-means">K-means</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kernel/" title="Kernel">Kernel</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kl-divergence/" title="KL divergence">KL divergence</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lasso/" title="Lasso">Lasso</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lda/" title="LDA">LDA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mcmc/" title="MCMC">MCMC</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mse/" title="MSE">MSE</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ols/" title="OLS">OLS</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/pca/" title="PCA">PCA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/rcpp/" title="Rcpp">Rcpp</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ridge/" title="Ridge">Ridge</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/svm/" title="SVM">SVM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
 	</div>
 </div>
 </aside>
@@ -316,7 +316,7 @@ Calls: &lt;Anonymous&gt; ... block_exec -&gt; in_dir -&gt; engine -&gt; do.call 
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="/oldblog/js/menu.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>

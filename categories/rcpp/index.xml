@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Rcpp on Hun Learning</title>
-    <link>/categories/rcpp/</link>
+    <link>https://hun-learning94.github.io/oldblog/categories/rcpp/</link>
     <description>Recent content in Rcpp on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 10:00:00 +0900</lastBuildDate><atom:link href="/categories/rcpp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2020 10:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/categories/rcpp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to Rcpp and RcppArmadillo</title>
-      <link>/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/</link>
       <pubDate>Mon, 07 Sep 2020 10:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/</guid>
       <description>References This post is based on several sources including;   https://dirk.eddelbuettel.com/papers/useR2019_rcpp_tutorial.pdf
 (Intro to Rcpp and Rcpparmadillo)
   https://privefl.github.io/R-presentation/Rcpp.html
@@ -31,10 +31,10 @@
     
     <item>
       <title>Rtools를 윈도우 환경변수 PATH에 추가하는 방법</title>
-      <link>/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/</link>
       <pubDate>Sun, 06 Sep 2020 10:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/</guid>
       <description>윈도우에서 리눅스 기반으로 만들어진 오픈소스 프로그램을 사용하면 필사적인 구글링을 해야하는 문제가 정말 주기적으로 발생하는 것 같습니다. Rmarkdown으로 Rcpp 함수를 쓸 때 knit가 안 되어, 해결하는데 꽤 고생했습니다. 혹시 이런 문제를 겪으실 분을 위해 간단한 가이드를 작성했습니다. 도움이 됐으면 좋겠습니다!
 Using opensource software such as R in windows is to face a constant barrage of quirky weird errors and to desperately search for help. Unexceptionally, Rcpp package kindly gave me another of such headache.</description>
     </item>

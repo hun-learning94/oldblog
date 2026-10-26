@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Naive Bayes Classifier on Hun Learning</title>
-    <link>/tags/naive-bayes-classifier/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/naive-bayes-classifier/</link>
     <description>Recent content in Naive Bayes Classifier on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 Apr 2020 11:00:00 +0900</lastBuildDate><atom:link href="/tags/naive-bayes-classifier/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 10 Apr 2020 11:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/naive-bayes-classifier/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Classification을 위한 선형 방법들</title>
-      <link>/posts/2020-04-10/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-04-10/</link>
       <pubDate>Fri, 10 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-04-10/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-04-10/</guid>
       <description>1. Classification and Test Error Rate 데이터 $x_i$에 대해 target 변수 $t_i$가 범주형 자료인 경우 (남자/여자, 성공/실패, 양념/간장/후라이드) 우리가 세우는 예측 모델 $f$을 Classifier라고 한다.
 $$ Classifier:; \hat{t_i} = f(x_i)$$
 당연히 우리의 모델 $f$는 종종 틀릴 것이다. Regression에서는 우리가 Error를 예측값과 실제값 사이의 거리의 제곱을 오차로 정의했다면, Classification은 좀 더 간단하게 전체 데이터에서 틀리게 분류된 횟수로 Error를 정의한다. 자세히 말하자면 아래와 같은 Indicator function을 만들어놓고

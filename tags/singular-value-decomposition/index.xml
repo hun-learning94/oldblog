@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Singular Value Decomposition on Hun Learning</title>
-    <link>/tags/singular-value-decomposition/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/singular-value-decomposition/</link>
     <description>Recent content in Singular Value Decomposition on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 09:40:00 +0900</lastBuildDate><atom:link href="/tags/singular-value-decomposition/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Mar 2020 09:40:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/singular-value-decomposition/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>03 Matrix as a Change of Basis</title>
-      <link>/posts/2020-03-25-03-matrix-as-a-change-of-basis/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-03-25-03-matrix-as-a-change-of-basis/</link>
       <pubDate>Wed, 25 Mar 2020 09:40:00 +0900</pubDate>
       
-      <guid>/posts/2020-03-25-03-matrix-as-a-change-of-basis/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-03-25-03-matrix-as-a-change-of-basis/</guid>
       <description>훈러닝 채널에 선형대수 강의 있습니다!</description>
     </item>
     

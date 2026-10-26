@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayesian Networks on Hun Learning</title>
-    <link>/tags/bayesian-networks/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/bayesian-networks/</link>
     <description>Recent content in Bayesian Networks on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 11 Aug 2020 01:00:00 +0900</lastBuildDate><atom:link href="/tags/bayesian-networks/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Aug 2020 01:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/bayesian-networks/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Bayesian Networks (Directed Acyclical Graphs)</title>
-      <link>/posts/2020-08-11-bayesian-networks-directed-acyclical-graphs/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-08-11-bayesian-networks-directed-acyclical-graphs/</link>
       <pubDate>Tue, 11 Aug 2020 01:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-08-11-bayesian-networks-directed-acyclical-graphs/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-08-11-bayesian-networks-directed-acyclical-graphs/</guid>
       <description></description>
     </item>
     

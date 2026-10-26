@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Generalized Additive Models on Hun Learning</title>
-    <link>/tags/generalized-additive-models/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/generalized-additive-models/</link>
     <description>Recent content in Generalized Additive Models on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Jan 2020 11:00:00 +0900</lastBuildDate><atom:link href="/tags/generalized-additive-models/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 24 Jan 2020 11:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/generalized-additive-models/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>ISL 07 Nonlinear Regression</title>
-      <link>/posts/2020-01-24-isl-07-nonlinear-regression/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-01-24-isl-07-nonlinear-regression/</link>
       <pubDate>Fri, 24 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-01-24-isl-07-nonlinear-regression/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-01-24-isl-07-nonlinear-regression/</guid>
       <description>훈러닝 채널에 ISL 전 범위 유투브 강의 있습니다!</description>
     </item>
     

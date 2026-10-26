@@ -2,458 +2,458 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Hun Learning</title>
-    <link>/tags/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/</link>
     <description>Recent content in Tags on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2020 10:00:00 +0900</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 07 Sep 2020 10:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Rcpp</title>
-      <link>/tags/rcpp/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/rcpp/</link>
       <pubDate>Mon, 07 Sep 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/rcpp/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/rcpp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian GMM</title>
-      <link>/tags/bayesian-gmm/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/bayesian-gmm/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/bayesian-gmm/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/bayesian-gmm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clustering</title>
-      <link>/tags/clustering/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/clustering/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/clustering/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/clustering/</guid>
       <description></description>
     </item>
     
     <item>
       <title>KL divergence</title>
-      <link>/tags/kl-divergence/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/kl-divergence/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/kl-divergence/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/kl-divergence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Latent Variable</title>
-      <link>/tags/latent-variable/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/latent-variable/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/latent-variable/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/latent-variable/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Posterior Approximation</title>
-      <link>/tags/posterior-approximation/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/posterior-approximation/</link>
       <pubDate>Tue, 25 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/posterior-approximation/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/posterior-approximation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Networks</title>
-      <link>/tags/bayesian-networks/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/bayesian-networks/</link>
       <pubDate>Tue, 11 Aug 2020 01:00:00 +0900</pubDate>
       
-      <guid>/tags/bayesian-networks/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/bayesian-networks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>D-seperation</title>
-      <link>/tags/d-seperation/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/d-seperation/</link>
       <pubDate>Tue, 11 Aug 2020 01:00:00 +0900</pubDate>
       
-      <guid>/tags/d-seperation/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/d-seperation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>EM algorithm</title>
-      <link>/tags/em-algorithm/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/em-algorithm/</link>
       <pubDate>Mon, 10 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/tags/em-algorithm/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/em-algorithm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gaussian Mixtures</title>
-      <link>/tags/gaussian-mixtures/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/gaussian-mixtures/</link>
       <pubDate>Mon, 10 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/tags/gaussian-mixtures/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/gaussian-mixtures/</guid>
       <description></description>
     </item>
     
     <item>
       <title>K-means</title>
-      <link>/tags/k-means/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/k-means/</link>
       <pubDate>Mon, 10 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/tags/k-means/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/k-means/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayesian Hierarchy</title>
-      <link>/tags/bayesian-hierarchy/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/bayesian-hierarchy/</link>
       <pubDate>Mon, 03 Aug 2020 08:00:00 +0900</pubDate>
       
-      <guid>/tags/bayesian-hierarchy/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/bayesian-hierarchy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gibbs Sampling</title>
-      <link>/tags/gibbs-sampling/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/gibbs-sampling/</link>
       <pubDate>Mon, 03 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/tags/gibbs-sampling/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/gibbs-sampling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MCMC</title>
-      <link>/tags/mcmc/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/mcmc/</link>
       <pubDate>Mon, 03 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/tags/mcmc/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/mcmc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Metropolis Hastings</title>
-      <link>/tags/metropolis-hastings/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/metropolis-hastings/</link>
       <pubDate>Mon, 03 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/tags/metropolis-hastings/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/metropolis-hastings/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Markov Chain</title>
-      <link>/tags/markov-chain/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/markov-chain/</link>
       <pubDate>Mon, 03 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/tags/markov-chain/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/markov-chain/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Stochastic Process</title>
-      <link>/tags/stochastic-process/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/stochastic-process/</link>
       <pubDate>Mon, 03 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/tags/stochastic-process/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/stochastic-process/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Conjugacy</title>
-      <link>/tags/conjugacy/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/conjugacy/</link>
       <pubDate>Mon, 20 Jul 2020 06:10:00 +0900</pubDate>
       
-      <guid>/tags/conjugacy/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/conjugacy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multivariate Normal</title>
-      <link>/tags/multivariate-normal/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/multivariate-normal/</link>
       <pubDate>Mon, 20 Jul 2020 06:10:00 +0900</pubDate>
       
-      <guid>/tags/multivariate-normal/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/multivariate-normal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bayes Rule</title>
-      <link>/tags/bayes-rule/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/bayes-rule/</link>
       <pubDate>Mon, 20 Jul 2020 05:30:00 +0900</pubDate>
       
-      <guid>/tags/bayes-rule/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/bayes-rule/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Frequentist</title>
-      <link>/tags/frequentist/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/frequentist/</link>
       <pubDate>Mon, 20 Jul 2020 05:20:00 +0900</pubDate>
       
-      <guid>/tags/frequentist/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/frequentist/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logistic Regression</title>
-      <link>/tags/logistic-regression/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/logistic-regression/</link>
       <pubDate>Mon, 15 Jun 2020 09:10:00 +0900</pubDate>
       
-      <guid>/tags/logistic-regression/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/logistic-regression/</guid>
       <description></description>
     </item>
     
     <item>
       <title>SVM</title>
-      <link>/tags/svm/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/svm/</link>
       <pubDate>Mon, 15 Jun 2020 09:10:00 +0900</pubDate>
       
-      <guid>/tags/svm/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/svm/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lagrangian Duality</title>
-      <link>/tags/lagrangian-duality/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/lagrangian-duality/</link>
       <pubDate>Fri, 17 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/lagrangian-duality/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/lagrangian-duality/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Naive Bayes Classifier</title>
-      <link>/tags/naive-bayes-classifier/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/naive-bayes-classifier/</link>
       <pubDate>Fri, 10 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/naive-bayes-classifier/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/naive-bayes-classifier/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Lasso</title>
-      <link>/tags/lasso/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/lasso/</link>
       <pubDate>Tue, 07 Apr 2020 12:00:00 +0900</pubDate>
       
-      <guid>/tags/lasso/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/lasso/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ridge</title>
-      <link>/tags/ridge/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/ridge/</link>
       <pubDate>Tue, 07 Apr 2020 12:00:00 +0900</pubDate>
       
-      <guid>/tags/ridge/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/ridge/</guid>
       <description></description>
     </item>
     
     <item>
       <title>MSE</title>
-      <link>/tags/mse/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/mse/</link>
       <pubDate>Tue, 07 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/mse/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/mse/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Matrix Derivatives</title>
-      <link>/tags/matrix-derivatives/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/matrix-derivatives/</link>
       <pubDate>Sun, 29 Mar 2020 09:20:00 +0900</pubDate>
       
-      <guid>/tags/matrix-derivatives/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/matrix-derivatives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jacobian</title>
-      <link>/tags/jacobian/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/jacobian/</link>
       <pubDate>Sun, 29 Mar 2020 09:10:00 +0900</pubDate>
       
-      <guid>/tags/jacobian/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/jacobian/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vector derivatives</title>
-      <link>/tags/vector-derivatives/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/vector-derivatives/</link>
       <pubDate>Sun, 29 Mar 2020 09:00:00 +0900</pubDate>
       
-      <guid>/tags/vector-derivatives/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/vector-derivatives/</guid>
       <description></description>
     </item>
     
     <item>
       <title>OLS</title>
-      <link>/tags/ols/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/ols/</link>
       <pubDate>Wed, 25 Mar 2020 09:50:00 +0900</pubDate>
       
-      <guid>/tags/ols/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/ols/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Singular Value Decomposition</title>
-      <link>/tags/singular-value-decomposition/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/singular-value-decomposition/</link>
       <pubDate>Wed, 25 Mar 2020 09:40:00 +0900</pubDate>
       
-      <guid>/tags/singular-value-decomposition/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/singular-value-decomposition/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Diagonalization</title>
-      <link>/tags/diagonalization/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/diagonalization/</link>
       <pubDate>Wed, 25 Mar 2020 09:30:00 +0900</pubDate>
       
-      <guid>/tags/diagonalization/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/diagonalization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linear Adjoint</title>
-      <link>/tags/linear-adjoint/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/linear-adjoint/</link>
       <pubDate>Wed, 25 Mar 2020 09:30:00 +0900</pubDate>
       
-      <guid>/tags/linear-adjoint/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/linear-adjoint/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Self Adjoint</title>
-      <link>/tags/self-adjoint/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/self-adjoint/</link>
       <pubDate>Wed, 25 Mar 2020 09:30:00 +0900</pubDate>
       
-      <guid>/tags/self-adjoint/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/self-adjoint/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Similar Matrices</title>
-      <link>/tags/similar-matrices/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/similar-matrices/</link>
       <pubDate>Wed, 25 Mar 2020 09:30:00 +0900</pubDate>
       
-      <guid>/tags/similar-matrices/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/similar-matrices/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Determinant</title>
-      <link>/tags/determinant/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/determinant/</link>
       <pubDate>Wed, 25 Mar 2020 09:00:00 +0900</pubDate>
       
-      <guid>/tags/determinant/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/determinant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Intro to Statistical Learning</title>
-      <link>/tags/intro-to-statistical-learning/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/intro-to-statistical-learning/</link>
       <pubDate>Sun, 26 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/intro-to-statistical-learning/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/intro-to-statistical-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kernel</title>
-      <link>/tags/kernel/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/kernel/</link>
       <pubDate>Sun, 26 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/kernel/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/kernel/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ADABOOST</title>
-      <link>/tags/adaboost/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/adaboost/</link>
       <pubDate>Sat, 25 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/adaboost/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/adaboost/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Adaptive Basis Model</title>
-      <link>/tags/adaptive-basis-model/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/adaptive-basis-model/</link>
       <pubDate>Sat, 25 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/adaptive-basis-model/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/adaptive-basis-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CART</title>
-      <link>/tags/cart/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/cart/</link>
       <pubDate>Sat, 25 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/cart/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/cart/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ensemble Learning</title>
-      <link>/tags/ensemble-learning/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/ensemble-learning/</link>
       <pubDate>Sat, 25 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/ensemble-learning/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/ensemble-learning/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Generalized Additive Models</title>
-      <link>/tags/generalized-additive-models/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/generalized-additive-models/</link>
       <pubDate>Fri, 24 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/generalized-additive-models/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/generalized-additive-models/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Regression Splines</title>
-      <link>/tags/regression-splines/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/regression-splines/</link>
       <pubDate>Fri, 24 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/regression-splines/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/regression-splines/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PCA</title>
-      <link>/tags/pca/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/pca/</link>
       <pubDate>Thu, 23 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/pca/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/pca/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bootstrap</title>
-      <link>/tags/bootstrap/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/bootstrap/</link>
       <pubDate>Wed, 22 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/bootstrap/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/bootstrap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>k-CV</title>
-      <link>/tags/k-cv/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/k-cv/</link>
       <pubDate>Wed, 22 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/k-cv/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/k-cv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>LDA</title>
-      <link>/tags/lda/</link>
+      <link>https://hun-learning94.github.io/oldblog/tags/lda/</link>
       <pubDate>Tue, 21 Jan 2020 11:00:00 +0900</pubDate>
       
-      <guid>/tags/lda/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/tags/lda/</guid>
       <description></description>
     </item>
     

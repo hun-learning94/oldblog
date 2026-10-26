@@ -2,60 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pattern Recognition and Machine Learning on Hun Learning</title>
-    <link>/tags/pattern-recognition-and-machine-learning/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/pattern-recognition-and-machine-learning/</link>
     <description>Recent content in Pattern Recognition and Machine Learning on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 10 Aug 2020 11:00:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/pattern-recognition-and-machine-learning/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hun-learning94.github.io/oldblog/tags/pattern-recognition-and-machine-learning/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Note on Kullback-Leibler Divergence</title>
-      <link>/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</link>
       <pubDate>Mon, 10 Aug 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/</guid>
       <description>How do we quantify an amount of information that some data $x$ contains? If the data is pretty much expected than it tells nothing new to us. But if it is so rare then it has some value. In this sense, we can think of an amount of information as a &amp;ldquo;degree of surprise&amp;rdquo;, and define
 $$ \text{information content of data $x$:}\quad h(x) = -\log p(x) $$ where the logarithm ensures $h(x,y)=h(x)+h(y) \Leftrightarrow p(x,y)=p(x)p(y)$, and the negative sign makes $h(x)\geq 0$.</description>
     </item>
     
     <item>
       <title>EM Algorithm for Latent Variable Models</title>
-      <link>/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</link>
       <pubDate>Mon, 10 Aug 2020 10:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/03-em-algorithm-for-latent-variable-models/</guid>
       <description>For an observed data $\mathbf{x}$, we might posit the existence of an unobserved data $\mathbf{z}$ and include it in model $p(\mathbf{x,z}\mid \theta)$. This is called a latent variable model. The question is, why bother? It turns out that in many cases, learning $\theta$ with the marginal log likelihood $p(\mathbf{x}\mid \theta)$ is hard, whereas learning with the joint likelihood with a complete data set $p(\mathbf{x,z}\mid \theta)$ is relatively easy. GMM is one such case.</description>
     </item>
     
     <item>
       <title>Mixtures of Gaussians and EM algorithm</title>
-      <link>/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</link>
       <pubDate>Mon, 10 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/02-mixtures-of-gaussians-and-em/</guid>
       <description>Mixtures of Gaussians (GMM) GMM as a joint distribution Suppose a random vector $\mathbf{x}$ follows a $K$ Gaussian mixture distribution,
 $$ p(\mathbf{x}) = \sum_{k=1}^K \pi_k N(\mathbf{x}\mid \boldsymbol{\mu_k, \Sigma_k}) $$ Knowing the distribution means we have complete information about the set of parameters $\pi_k, \boldsymbol{\mu_k, \Sigma_k}$ for all $k$. Let us say that the parameter $\pi_k$ is shrouded, and instead we have a random variable $\mathbf{z}$ with $1-to-K$ coding where exactly one of $K$ elements (say $z_k$) be $1$ while all else are $0$.</description>
     </item>
     
     <item>
       <title>K-means clustering</title>
-      <link>/posts/bayesian-ml/week5/01-k-means-clustering/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/01-k-means-clustering/</link>
       <pubDate>Mon, 10 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/01-k-means-clustering/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/01-k-means-clustering/</guid>
       <description>Gaussian mixture model is a widely used probabilistic model. For inference (model learning), we may use either EM algorithm which is a MLE approach or use Bayesian approach, which leads to variational inference. We would study this topic next week. For now, let us introduce one of the well-known nonparameteric methods for unsupervised learning, and introduce Gaussian mixture as a parametric counterpart.
 K-means clustering Let us suppose that we know the total number of clusters is fixed as $K$.</description>
     </item>
     
     <item>
       <title>Classification을 위한 선형 방법들</title>
-      <link>/posts/linear-methods-for-classification/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/linear-methods-for-classification/</link>
       <pubDate>Fri, 10 Apr 2020 11:00:00 +0900</pubDate>
       
-      <guid>/posts/linear-methods-for-classification/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/linear-methods-for-classification/</guid>
       <description>1. Classification and Test Error Rate 데이터 $x_i$에 대해 target 변수 $t_i$가 범주형 자료인 경우 (남자/여자, 성공/실패, 양념/간장/후라이드) 우리가 세우는 예측 모델 $f$을 Classifier라고 한다.
 $$ Classifier:; \hat{t_i} = f(x_i)$$
 당연히 우리의 모델 $f$는 종종 틀릴 것이다. Regression에서는 우리가 Error를 예측값과 실제값 사이의 거리의 제곱을 오차로 정의했다면, Classification은 좀 더 간단하게 전체 데이터에서 틀리게 분류된 횟수로 Error를 정의한다. 자세히 말하자면 아래와 같은 Indicator function을 만들어놓고

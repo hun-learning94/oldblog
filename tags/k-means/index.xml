@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>K-means on Hun Learning</title>
-    <link>/tags/k-means/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/k-means/</link>
     <description>Recent content in K-means on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 10 Aug 2020 06:00:00 +0900</lastBuildDate><atom:link href="/tags/k-means/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Aug 2020 06:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/k-means/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>K-means clustering</title>
-      <link>/posts/bayesian-ml/week5/01-k-means-clustering/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/01-k-means-clustering/</link>
       <pubDate>Mon, 10 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week5/01-k-means-clustering/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week5/01-k-means-clustering/</guid>
       <description>Gaussian mixture model is a widely used probabilistic model. For inference (model learning), we may use either EM algorithm which is a MLE approach or use Bayesian approach, which leads to variational inference. We would study this topic next week. For now, let us introduce one of the well-known nonparameteric methods for unsupervised learning, and introduce Gaussian mixture as a parametric counterpart.
 K-means clustering Let us suppose that we know the total number of clusters is fixed as $K$.</description>
     </item>

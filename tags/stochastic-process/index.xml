@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stochastic Process on Hun Learning</title>
-    <link>/tags/stochastic-process/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/stochastic-process/</link>
     <description>Recent content in Stochastic Process on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2020 06:00:00 +0900</lastBuildDate><atom:link href="/tags/stochastic-process/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 03 Aug 2020 06:00:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/stochastic-process/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>(MCMC) Discrete-Time Markov Chain with Finite State Space</title>
-      <link>/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</link>
       <pubDate>Mon, 03 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</guid>
       <description>0. 이걸 왜 배우는데? 저번 시간에 간략히 살펴본 Gibbs Sampler는 MCMC(Markov Chain Monte Carlo), 즉 마코브 체인을 이용한 Posterior 분포 시뮬레이션 방법 중 하나인데, 이 MCMC 방법들이 도대체가 왜 잘 먹히는 지를 알려면 아무래도 마코브 체인에 대한 배경지식이 필요하다. 어떤 분포를 MCMC로 근사한다는 것은 모수 공간의 어떤 포인트에서 다른 포인트로 총총 점프하는 그 과정을 &amp;ldquo;잘&amp;rdquo; 구현해서, 마치 그 샘플들이 내가 모르는 그 분포에서 나온 것과 같다고 퉁치는 거다.
 MCMC 이름의 의미</description>
     </item>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Matrix Derivatives on Hun Learning</title>
-    <link>/tags/matrix-derivatives/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/matrix-derivatives/</link>
     <description>Recent content in Matrix Derivatives on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 29 Mar 2020 09:20:00 +0900</lastBuildDate><atom:link href="/tags/matrix-derivatives/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Mar 2020 09:20:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/matrix-derivatives/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>03 Matrix Derivatives</title>
-      <link>/posts/2020-03-29-03-matrix-derivatives/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-03-29-03-matrix-derivatives/</link>
       <pubDate>Sun, 29 Mar 2020 09:20:00 +0900</pubDate>
       
-      <guid>/posts/2020-03-29-03-matrix-derivatives/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-03-29-03-matrix-derivatives/</guid>
       <description>훈러닝 채널에 벡터 및 행렬 미분 강의 있습니다!</description>
     </item>
     

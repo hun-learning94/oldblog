@@ -10,7 +10,7 @@
 		<meta property="og:title" content="Classification을 위한 선형 방법들" />
 <meta property="og:description" content="Example article description" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/posts/2020-04-10/" />
+<meta property="og:url" content="/oldblog/posts/2020-04-10/" />
 <meta property="article:published_time" content="2020-04-10T11:00:00+09:00" />
 <meta property="article:modified_time" content="2020-04-10T11:00:00+09:00" />
 
@@ -27,9 +27,9 @@
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/oldblog/css/style.css">
 	
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="shortcut icon" href="/oldblog/favicon.ico">
 		
 </head>
 <body class="body">
@@ -38,9 +38,9 @@
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
-		<a class="logo__link" href="/" title="Hun Learning" rel="home">
+		<a class="logo__link" href="/oldblog/" title="Hun Learning" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/mypic2.jpg">
+					<img class="logo__img" src="/oldblog/mypic2.jpg">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">Hun Learning</div>
 					<div class="logo__tagline">In Search Of The Truth Projected Onto A Finite Dimension</div>
@@ -54,7 +54,7 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/about/">
+			<a class="menu__link" href="/oldblog/posts/about/">
 				
 				<span class="menu__text">Author</span>
 				
@@ -111,12 +111,12 @@
 	<svg class="meta__icon icon icon-author" width="16" height="16" viewBox="0 0 12 16"><path d="M6 1c2.2 0 3.5 2 3.5 4.5C9.5 7 8.9 8.2 8 9c2.9.8 4 2.5 4 5v1H0v-1c0-2.5 1.1-4.2 4-5-.9-.8-1.5-2-1.5-3.5C2.5 3 3.8 1 6 1z"/></svg><span class="meta__text">Kang Gyeonghun</span>
 </div>
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-04-10T11:00:00&#43;09:00">2020-04-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/statistics/" rel="category">Statistics</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-04-10T11:00:00&#43;09:00">2020-04-10</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/oldblog/categories/statistics/" rel="category">Statistics</a>
 	</span>
 </div></div>
 		</header>
 		<figure class="post__thumbnail">
-			<img src="/cover/PRML.jpg" alt="Classification을 위한 선형 방법들">
+			<img src="/oldblog/cover/PRML.jpg" alt="Classification을 위한 선형 방법들">
 		</figure>
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
@@ -221,7 +221,7 @@ ax3<span style="color:#f92672">.</span>plot(ht, bdb<span style="color:#f92672">.
 ax3<span style="color:#f92672">.</span>legend(loc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;lower right&#39;</span>)
 
 fig<span style="color:#f92672">.</span>tight_layout()
-</code></pre></div><p><img src="/image/output_8_0.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_8_0.png" alt="png"></p>
 <p>Bayes Classifier로 분류로 하는 경우 데이터의 영역은 $p[C_k|x_i]$ $(t_i \in {C_1, C_2, &hellip;, C_K})$가 같은 지점을 기준으로 나눠지게 되는데, 이를 <strong>Bayesian Decision Boundary</strong> 라고 부른다. 이 베이지안 디시젼 바운더리는 쉽게 말하면 데이터 공간이 D차원일때, D차원을 가로지르는 D-1 차원의 선/면/공간, 즉 <strong>Hyperplane</strong> 으로 생각할 수 있다. 위의 경우 우리는 데이터의 분포를 완전히 알고 있으므로 베이지안 디시젼 바운더리를 그릴 수 있지만, 실제로는 그릴 수 없으므로 이 Decision Boundary를 추정해야 한다. 이처럼 Classification은 결국 D 차원의 데이터 공간을 분할하는 방법이라고 보아도 무방하며, 수많은 Classification 방법은 결국 어떤 방법으로 이 직선을 그리는 것인가로 귀결된다.</p>
 <p>지금 내가 말하고 싶은 것은, 아무리 기깔나게 우리가 선을 잘 그려도, 꼭 몇 개씩 틀리는 게 있을 수 밖에 없으며, 그것이 Bayes Error Rate이라는 것이다. 이걸 보이기 위해 실제로 위 분포를 따르는 데이터를 생성해보자.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">N <span style="color:#f92672">=</span> <span style="color:#ae81ff">10000</span>
@@ -241,7 +241,7 @@ fig<span style="color:#f92672">.</span>subplots_adjust(hspace<span style="color:
     axi<span style="color:#f92672">.</span>plot(female_data[:,<span style="color:#ae81ff">0</span>], female_data[:,<span style="color:#ae81ff">1</span>], linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>, marker<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;o&#39;</span>, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Female&#39;</span>)
     axi<span style="color:#f92672">.</span>plot(ht, bdb<span style="color:#f92672">.</span>T, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;BDB&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>)
     axi<span style="color:#f92672">.</span>legend(loc<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;upper left&#39;</span>)
-</code></pre></div><p><img src="/image/output_10_0.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_10_0.png" alt="png"></p>
 <p>    위에서 p(남녀, 키와몸무게)의 분포의 모수를 다르게 설정하면 (남자의 비율을 낮춰본다, 남자 키의 평균을 옮겨본다, 여자 몸무게 분산을 높여본다 등등) 얼마든지 다른 Bayesian Decision Boundary가 나올 수 있다. 당연히 두 분포가 서로 가까울수록, 즉 겹치는 부분이 많을수록 BDB를 넘는 데이터도 많이 나올 것이다.</p>
 <!-- raw HTML omitted -->
 <h3 id="1-2-methods-of-classification">1-2. Methods of Classification</h3>
@@ -313,7 +313,7 @@ ax<span style="color:#f92672">.</span>scatter(X[:,<span style="color:#ae81ff">0<
 ax<span style="color:#f92672">.</span>plot(ht, db<span style="color:#f92672">.</span>T, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;LDA DB&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;black&#39;</span>, linestyle<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;--&#39;</span>)
 ax<span style="color:#f92672">.</span>plot(ht, bdb<span style="color:#f92672">.</span>T, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;BDB&#39;</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>)
 ax<span style="color:#f92672">.</span>legend()
-</code></pre></div><p><img src="/image/output_29_1.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_29_1.png" alt="png"></p>
 <h4 id="br2-2-2-qda-in-sklearn"><!-- raw HTML omitted -->2-2-2. QDA in sklearn</h4>
 <p>위에 만든 남자 여자 키 몸무게 데이터에서 남자와 여자의 class conditional density를 각각 다르게 설정하여 샘플을 생성해보자. 이 경우는 LDA보다 QDA가 더 적합할 것이다. <strong>다만 LDA보다 추정해야할 모수가 4개 더 많으니 ($(K-1)\times D^2$ 만큼 많아진다)</strong> 범주가 많거나 데이터가 적은 경우에는 함부로 쓰지 말자. Test set Error랑 비교해보면 적당히 감을 잡을 것.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">### Generate MVN samples with heterogenous covariance matrix</span>
@@ -352,7 +352,7 @@ R1, R2 <span style="color:#f92672">=</span> np<span style="color:#f92672">.</spa
 R <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>c_[R1<span style="color:#f92672">.</span>ravel(), R2<span style="color:#f92672">.</span>ravel()]
 Z <span style="color:#f92672">=</span> clf<span style="color:#f92672">.</span>predict(R)<span style="color:#f92672">.</span>reshape(R1<span style="color:#f92672">.</span>shape)
 ax1<span style="color:#f92672">.</span>contour(R1, R2, Z, cmap<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Greys_r&#34;</span>)
-</code></pre></div><p><img src="/image/output_32_2.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_32_2.png" alt="png"></p>
 <h4 id="br2-2-3-hw-multinomial-naive-bayes"><!-- raw HTML omitted -->2-2-3. (HW) Multinomial Naive Bayes</h4>
 <p>feature가 서로 독립이며 단순히 다항분포를 따른다고 가정할 떄 쓰기 좋다. 대표적인 예로 feature가 어떤 count, 횟수일 때 쓰는데, 텍스트 분류에서 자주 쓰인다고 한다. 자세한 예시와 코드는 <a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.05-naive-bayes.html">https://jakevdp.github.io/PythonDataScienceHandbook/05.05-naive-bayes.html</a> 여기에서 Multinomial Naive Bayes 항목을 참고하자. 짧은 토막글을 내부 단어에 따라 분류하는 예시를 소개하는데, 한 번 따라해보자.</p>
 <!-- raw HTML omitted -->
@@ -525,7 +525,7 @@ ax1<span style="color:#f92672">.</span>plot(np<span style="color:#f92672">.</spa
 ax2 <span style="color:#f92672">=</span> fig<span style="color:#f92672">.</span>add_subplot(<span style="color:#ae81ff">122</span>)
 ax2<span style="color:#f92672">.</span>plot(losstrack)
 ax2<span style="color:#f92672">.</span>set(title<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Cross Entropy Loss&#39;</span>, xlabel<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Iteration&#39;</span>)
-</code></pre></div><p><img src="/image/output_40_1.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_40_1.png" alt="png"></p>
 <h4 id="2-3-1-1-logistic-regression-in-sklearn">2-3-1-1. Logistic Regression in sklearn</h4>
 <p>우리는 그냥 sklearn 쓰자ㅎㅎ</p>
 <h5 id="logistic-regression-without-feature-extraction">Logistic Regression without Feature Extraction</h5>
@@ -546,7 +546,7 @@ db <span style="color:#f92672">=</span> <span style="color:#f92672">-</span>b<sp
 ax1<span style="color:#f92672">.</span>plot(np<span style="color:#f92672">.</span>linspace(<span style="color:#f92672">-</span><span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">100</span>), db<span style="color:#f92672">.</span>T, label<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Decision Boundary&#39;</span>, 
          linewidth<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>, alpha<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>)
 fig<span style="color:#f92672">.</span>tight_layout()
-</code></pre></div><p><img src="/image/output_44_1.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_44_1.png" alt="png"></p>
 <p>solver? max_iter? 로지스틱 회귀의 MLE를 찾는 방법이 iterative하게 최적화 문제를 푸는 문제다보니 sklearn은 사용자가 어떤 알고리즘으로 몇 번 반복할 것인지 선택할 수 있게 했다. 클래스가 바이너리냐 멀티이냐, 데이터가 많냐 적냐에 따라 무엇이 나은지 다르니 아래를 읽어보고 잘 골라보자.</p>
 <p><img src="https://raw.githubusercontent.com/YonseiESC/ESC20-SPRING/master/%EC%84%B8%EC%85%98%20%EC%9E%90%EB%A3%8C/week3/snip06.PNG" alt=""></p>
 <p>(출처: <a href="https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html">https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html</a> )</p>
@@ -574,7 +574,7 @@ Z <span style="color:#f92672">=</span> clf<span style="color:#f92672">.</span>pr
 plt<span style="color:#f92672">.</span>contour(R1, R2, Z, cmap<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Greys_r&#34;</span>)
 
 fig<span style="color:#f92672">.</span>tight_layout()
-</code></pre></div><p><img src="/image/output_48_1.png" alt="png"></p>
+</code></pre></div><p><img src="/oldblog/image/output_48_1.png" alt="png"></p>
 <h3 id="brhomework"><!-- raw HTML omitted -->HOMEWORK</h3>
 <h4 id="hw1-위에-multinomial-naive-bayes-classifier-예시-해보기">HW1. 위에 Multinomial Naive Bayes Classifier 예시 해보기</h4>
 <h4 id="hw2-둘-중-하나를-선택">HW2. 둘 중 하나를 선택.</h4>
@@ -610,10 +610,10 @@ Multinomial Naive Bayes Classifier로 본인이 직접 인터넷에서 텍스트
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/naive-bayes-classifier/" rel="tag">Naive Bayes Classifier</a>
+			<a class="tags__link btn" href="/oldblog/tags/naive-bayes-classifier/" rel="tag">Naive Bayes Classifier</a>
 		</li>
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags/logistic-regression/" rel="tag">Logistic Regression</a>
+			<a class="tags__link btn" href="/oldblog/tags/logistic-regression/" rel="tag">Logistic Regression</a>
 		</li>
 	</ul>
 </div>
@@ -623,7 +623,7 @@ Multinomial Naive Bayes Classifier로 본인이 직접 인터넷에서 텍스트
 
 <div class="authorbox clearfix">
 	<figure class="authorbox__avatar">
-		<img alt="Kang Gyeonghun avatar" src="/mypic1.jpg" class="avatar" height="90" width="90">
+		<img alt="Kang Gyeonghun avatar" src="/oldblog/mypic1.jpg" class="avatar" height="90" width="90">
 	</figure>
 	<div class="authorbox__header">
 		<span class="authorbox__name"></span>
@@ -635,13 +635,13 @@ Multinomial Naive Bayes Classifier로 본인이 직접 인터넷에서 텍스트
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
-		<a class="pager__link" href="/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/" rel="prev">
+		<a class="pager__link" href="/oldblog/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/" rel="prev">
 			<span class="pager__subtitle">«&thinsp;Previous</span>
 			<p class="pager__title">Ridge와 Lasso, 그리고 베이지안 해석</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
-		<a class="pager__link" href="/posts/2020-04-17-support-vector-machine-%EC%9D%B4%ED%95%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-lagrangian-dual-problem/" rel="next">
+		<a class="pager__link" href="/oldblog/posts/2020-04-17-support-vector-machine-%EC%9D%B4%ED%95%B4%EB%A5%BC-%EC%9C%84%ED%95%9C-lagrangian-dual-problem/" rel="next">
 			<span class="pager__subtitle">Next&thinsp;»</span>
 			<p class="pager__title">Support Vector Machine 이해를 위한 Lagrangian Dual Problem 이해해보기</p>
 		</a>
@@ -686,68 +686,68 @@ Multinomial Naive Bayes Classifier로 본인이 직접 인터넷에서 텍스트
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/">Introduction to Rcpp and RcppArmadillo</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
-			<li class="widget__item"><a class="widget__link" href="/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-09-07-intro-to-rcpp-and-rcpparmadillo/">Introduction to Rcpp and RcppArmadillo</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-09-06-how-to-add-rtools-to-windows-path-env/">Rtools를 윈도우 환경변수 PATH에 추가하는 방법</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-25-variational-inference/">Variational Inference and Bayesian Gaussian Mixture Model</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/2020-08-24-forward-and-reverse-kl-divergence/">Forward and Reverse KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/05-mle-minimizes-kl-divergence/">Interpretation of MLE in terms of KL divergence</a></li>
+			<li class="widget__item"><a class="widget__link" href="/oldblog/posts/bayesian-ml/week5/04-note-on-kullback-leibler-divergence/">Note on Kullback-Leibler Divergence</a></li>
 		</ul>
 	</div>
 </div>
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaboost/" title="ADABOOST">ADABOOST</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/cart/" title="CART">CART</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/clustering/" title="Clustering">Clustering</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/d-seperation/" title="D-seperation">D-seperation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/determinant/" title="Determinant">Determinant</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/frequentist/" title="Frequentist">Frequentist</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/jacobian/" title="Jacobian">Jacobian</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-cv/" title="k-CV">k-CV</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/k-means/" title="K-means">K-means</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kernel/" title="Kernel">Kernel</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/kl-divergence/" title="KL divergence">KL divergence</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lasso/" title="Lasso">Lasso</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/lda/" title="LDA">LDA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mcmc/" title="MCMC">MCMC</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/mse/" title="MSE">MSE</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ols/" title="OLS">OLS</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/pca/" title="PCA">PCA</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rcpp/" title="Rcpp">Rcpp</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/ridge/" title="Ridge">Ridge</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/svm/" title="SVM">SVM</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaboost/" title="ADABOOST">ADABOOST</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/adaptive-basis-model/" title="Adaptive Basis Model">Adaptive Basis Model</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayes-rule/" title="Bayes Rule">Bayes Rule</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-gmm/" title="Bayesian GMM">Bayesian GMM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-hierarchy/" title="Bayesian Hierarchy">Bayesian Hierarchy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bayesian-networks/" title="Bayesian Networks">Bayesian Networks</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/bootstrap/" title="Bootstrap">Bootstrap</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/cart/" title="CART">CART</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/clustering/" title="Clustering">Clustering</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/conjugacy/" title="Conjugacy">Conjugacy</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/d-seperation/" title="D-seperation">D-seperation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/determinant/" title="Determinant">Determinant</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/diagonalization/" title="Diagonalization">Diagonalization</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/em-algorithm/" title="EM algorithm">EM algorithm</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ensemble-learning/" title="Ensemble Learning">Ensemble Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/frequentist/" title="Frequentist">Frequentist</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gaussian-mixtures/" title="Gaussian Mixtures">Gaussian Mixtures</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/generalized-additive-models/" title="Generalized Additive Models">Generalized Additive Models</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/gibbs-sampling/" title="Gibbs Sampling">Gibbs Sampling</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/intro-to-statistical-learning/" title="Intro to Statistical Learning">Intro to Statistical Learning</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/jacobian/" title="Jacobian">Jacobian</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-cv/" title="k-CV">k-CV</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/k-means/" title="K-means">K-means</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kernel/" title="Kernel">Kernel</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/kl-divergence/" title="KL divergence">KL divergence</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lagrangian-duality/" title="Lagrangian Duality">Lagrangian Duality</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lasso/" title="Lasso">Lasso</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/latent-variable/" title="Latent Variable">Latent Variable</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/lda/" title="LDA">LDA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/linear-adjoint/" title="Linear Adjoint">Linear Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/logistic-regression/" title="Logistic Regression">Logistic Regression</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/markov-chain/" title="Markov Chain">Markov Chain</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/matrix-derivatives/" title="Matrix Derivatives">Matrix Derivatives</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mcmc/" title="MCMC">MCMC</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/metropolis-hastings/" title="Metropolis Hastings">Metropolis Hastings</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/mse/" title="MSE">MSE</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/multivariate-normal/" title="Multivariate Normal">Multivariate Normal</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/naive-bayes-classifier/" title="Naive Bayes Classifier">Naive Bayes Classifier</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ols/" title="OLS">OLS</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/pca/" title="PCA">PCA</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/posterior-approximation/" title="Posterior Approximation">Posterior Approximation</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/rcpp/" title="Rcpp">Rcpp</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/regression-splines/" title="Regression Splines">Regression Splines</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/ridge/" title="Ridge">Ridge</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/self-adjoint/" title="Self Adjoint">Self Adjoint</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/similar-matrices/" title="Similar Matrices">Similar Matrices</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/singular-value-decomposition/" title="Singular Value Decomposition">Singular Value Decomposition</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/stochastic-process/" title="Stochastic Process">Stochastic Process</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/svm/" title="SVM">SVM</a>
+		<a class="widget-taglist__link widget__link btn" href="/oldblog/tags/vector-derivatives/" title="vector derivatives">vector derivatives</a>
 	</div>
 </div>
 </aside>
@@ -762,7 +762,7 @@ Multinomial Naive Bayes Classifier로 본인이 직접 인터넷에서 텍스트
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
+<script async defer src="/oldblog/js/menu.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>

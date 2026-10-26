@@ -2,50 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayesian on Hun Learning</title>
-    <link>/tags/bayesian/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/bayesian/</link>
     <description>Recent content in Bayesian on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 03 Aug 2020 08:00:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hun-learning94.github.io/oldblog/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bayesian Hierarchical Modeling and its Applications</title>
-      <link>/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</link>
       <pubDate>Mon, 03 Aug 2020 08:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/03-bayesian-hierarchical-modeling-and-applications/</guid>
       <description>Review: Full conditional posterior for normal likelihood 일단 정규분포의 semi-conjugate prior에 대한 내용을 다시 정리해보자.
  $p(\theta\mid\sigma^2, \mathbf{D}) = dnorm(\theta, \mu_n, \tau_n^2)$ $\mu_n= \dfrac{1/\tau_0^2}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\mu_0 + \dfrac{\frac{n}{\sigma^2}}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}\bar{x}$ $\tau_n^2 = \dfrac{1}{\frac{1}{\tau_0^2} + \frac{n}{\sigma^2}}$ $p(\sigma^2\mid\theta, \mathbf{D}) = dinv\Gamma(\sigma^2, v_n, \dfrac{1}{v_n}(v_0\sigma_0^2+\sum (y_i-\theta)^2)$  Two Group Comparison: Math scores library(ggplot2) library(cowplot) school1 = dget(&amp;#39;http://www2.stat.duke.edu/~pdh10/FCBS/Inline/y.school1&amp;#39;) school2 = dget(&amp;#39;http://www2.stat.duke.edu/~pdh10/FCBS/Inline/y.school2&amp;#39;) df = data.frame(school = c(rep(&amp;#39;s1&amp;#39;, length(school1)),rep(&amp;#39;s2&amp;#39;, length(school2))), score = c(school1, school2) ) ggplot(df, aes(x=school, y=score))+ geom_boxplot(aes(fill=school))+ ggtitle(&amp;#39;Math scores comparison&amp;#39;)+ theme_cowplot() 통계학이 필요한 이유는 이런 &amp;ldquo;애매한&amp;rdquo; 차이 때문이다.</description>
     </item>
     
     <item>
       <title>(MCMC) 베이지안 사후분포 근사를 위한 MCMC 방법론</title>
-      <link>/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</link>
       <pubDate>Mon, 03 Aug 2020 07:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/02-mcmc-approximation-for-bayesian-posterior/</guid>
       <description>0. 개요 베이지안에서 모수에 대한 추론은 곧 모수의 분포를 구하는 것이다. 미지의 수에 대한 불확실성을 확률로 표현하였으니, 베이즈 정리를 이용해 데이터의 불확실성과 거짓말처럼 깔끔하게 같이 섞을 수 있기 때문이다. 그러나 아쉽게도 그 결과로 나오는 분포는 항상 깔끔하지만은 않다. 물론 데이터에 대한 모델을 지수분포족으로 한정하고, 그에 대응하는 또다른 특별한 지수분포족 분포함수를 사용하면, 사후분포의 모수를 쉽게 구할 수 있는데, 이러한 경우를 Prior-Posterior 간에 Conjugacy가 있다고 한다. 그러나 많은 경우 복잡한 데이터에 맞게 모델을 만들다 보면 해석적이지 않은 사후분포에 맞닥뜨리게 된다.</description>
     </item>
     
     <item>
       <title>(MCMC) Discrete-Time Markov Chain with Finite State Space</title>
-      <link>/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</link>
       <pubDate>Mon, 03 Aug 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week3/01-discrete-time-markov-chaine-with-finite-state-space/</guid>
       <description>0. 이걸 왜 배우는데? 저번 시간에 간략히 살펴본 Gibbs Sampler는 MCMC(Markov Chain Monte Carlo), 즉 마코브 체인을 이용한 Posterior 분포 시뮬레이션 방법 중 하나인데, 이 MCMC 방법들이 도대체가 왜 잘 먹히는 지를 알려면 아무래도 마코브 체인에 대한 배경지식이 필요하다. 어떤 분포를 MCMC로 근사한다는 것은 모수 공간의 어떤 포인트에서 다른 포인트로 총총 점프하는 그 과정을 &amp;ldquo;잘&amp;rdquo; 구현해서, 마치 그 샘플들이 내가 모르는 그 분포에서 나온 것과 같다고 퉁치는 거다.
 MCMC 이름의 의미</description>
     </item>
     
     <item>
       <title>Bayesian Modelling by Zoubin Ghahramani, MLSS2012, Univ of Cambridge</title>
-      <link>/posts/2020-07-31-bayesian-modeling/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-07-31-bayesian-modeling/</link>
       <pubDate>Fri, 31 Jul 2020 09:10:00 +0900</pubDate>
       
-      <guid>/posts/2020-07-31-bayesian-modeling/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-07-31-bayesian-modeling/</guid>
       <description>베이지안 머신러닝에 대해 인터넷에서 자료를 찾다보니 꽤 괜찮은 동영상 강의가 있어서 요약해보았다. 베이지안 모델링에 대해 개괄적으로 설명해주는 강의인데, 머신러닝에서 베이즈 정리가 어떻게 쓰이는지 잘 설명된 자료인 것 같다.
 http://videolectures.net/mlss2012_ghahramani_bayesian_modelling/
 위 링크에서 해당 강의 자료를 다운받고 시청할 수 있다. 다만 어도비 플래시가 있어야 구동이 되니 아마 올해가 지나면 못 듣지 않을까 싶다. 베이지안 모델링 외에도 Bayesian Nonparametrics, Graphical Model 등등 다른 다양한 강의가 있으니 한번 참고해보자.
@@ -54,10 +54,10 @@ http://videolectures.net/mlss2012_ghahramani_bayesian_modelling/
     
     <item>
       <title>Conjugate Prior for Multivariate Model</title>
-      <link>/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</link>
       <pubDate>Mon, 20 Jul 2020 06:10:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</guid>
       <description>library(ggplot2) library(cowplot) library(reshape) Multivariate Normal Model Consider a bivariate normal random variable $[y_1, y_2]^T$. The density is written as ($p=2$)
 $$ p(\mathbf{y}|\theta, \Sigma) = (\dfrac{1}{2\pi})^{-p/2}|\Sigma|^{-1/2} \exp{-\dfrac{1}{2}(\mathbf{y}-\theta)^T\Sigma^{-1}(\mathbf{y}-\theta)} $$
 where the parameter is $\theta = \begin{pmatrix} E[y_1]\\\ E[y_2] \end{pmatrix}$ and $\Sigma = \begin{pmatrix} E[y_1^2]-E[y_1]^2 &amp;amp; E[y_1y_2]-E[y_1]E[y_2]\\\
@@ -69,10 +69,10 @@ Few things worth mentioning for multivariate normal model
     
     <item>
       <title>Conjugate Prior for Univariate - Normal Model</title>
-      <link>/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</link>
       <pubDate>Mon, 20 Jul 2020 06:05:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</guid>
       <description>Inference for Normal Model Normal likelihood model has two parameters
 $$ p(x|\theta, \sigma^2) = \dfrac{1}{\sigma\sqrt{2\pi}}\exp(-\dfrac{1}{2}(\dfrac{x-\theta}{\sigma})^2) $$ which requires a joint prior $p(\theta, \sigma^2)$. As for a single parameter case, we have joint posterior updated as
 $$ p(\theta, \sigma^2|\mathbf{D}) \propto p(\theta, \sigma^2)p(\mathbf{D}|\theta, \sigma^2) $$ When our interest is in $\theta$, $\sigma^2$ is a nuisance parameter. Given the data $\mathbf{D}$ and the normal likelihood, we have three ways to deal with $\sigma^2$;</description>
@@ -80,10 +80,10 @@ $$ p(\theta, \sigma^2|\mathbf{D}) \propto p(\theta, \sigma^2)p(\mathbf{D}|\theta
     
     <item>
       <title>Conjugate Prior for Univariate - Poisson Model</title>
-      <link>/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</link>
       <pubDate>Mon, 20 Jul 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</guid>
       <description>library(ggplot2) library(cowplot) library(reshape) Bayesian Update and Prediction Given a data $\mathbf{D}={x_1, x_2, &amp;hellip;, x_n}$, once a likelihood model $p(\mathbf{D}|\theta)$ and a prior on a parameter $p(\theta)$ are specified, Bayesian inference produces an updated belief on $\theta$.
 $$ \begin{align} \text{Prior Belief}&amp;amp;\quad p(\theta)\\\
 \text{Likelihood}&amp;amp;\quad p(\mathbf{D}|\theta)\\\
@@ -93,10 +93,10 @@ Our interest may extend to the prediction the new value $\tilde{x}$ that would b
     
     <item>
       <title>Bayesian Approach: 하나의 데이터, 임의의 모수</title>
-      <link>/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</link>
       <pubDate>Mon, 20 Jul 2020 05:30:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week1/08-bayesian-approach-%ED%95%98%EB%82%98%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EC%97%AC%EB%9F%AC-%EA%B0%9C%EC%9D%98-%EB%AA%A8%EC%88%98/</guid>
       <description>0. 생각하는 로봇은 베이지안이다! 주변 환경을 인지하고 목적지를 찾는 로봇을 생각해보자. 목적지로 가는 경로에는 수많은 경우의 수가 있다. 이 경로에서 로봇은 시시각각 환경을 파악해서, 즉 데이터를 수집해서 가장 안전한 길을 택해야 한다. 전방에 위험징후를 포착했다. 로봇은 그 방향으로 가는 길이 위험하다고 판단해 경로를 변경해야 한다. 자 그러면 이걸 어떻게 코딩할까? 각각의 길이 위험할 확률 $p(road_i=unsafe)$과, 각각의 길에서 위험한 징후가 포착될 확률 $p(sign\mid road_i=unsafe)$ 을 고려하여, 위험할 확률 $p(road_i = unsafe \mid sign)$ 을 다시 계산해야한다.</description>
     </item>
     

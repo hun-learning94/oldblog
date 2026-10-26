@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bayeisan on Hun Learning</title>
-    <link>/tags/bayeisan/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/bayeisan/</link>
     <description>Recent content in Bayeisan on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Apr 2020 12:00:00 +0900</lastBuildDate>
     
-	<atom:link href="/tags/bayeisan/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://hun-learning94.github.io/oldblog/tags/bayeisan/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ridge와 Lasso, 그리고 베이지안 해석</title>
-      <link>/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</link>
       <pubDate>Tue, 07 Apr 2020 12:00:00 +0900</pubDate>
       
-      <guid>/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/2020-04-07-ridge%EC%99%80-lasso-%EA%B7%B8%EB%A6%AC%EA%B3%A0-%EB%B2%A0%EC%9D%B4%EC%A7%80%EC%95%88-%ED%95%B4%EC%84%9D/</guid>
       <description>References  Pattern Recognition and Machine Learning, Bishop, 2006 Introduction to Statistical Learning, James et al, 2013  </description>
     </item>
     

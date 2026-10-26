@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Conjugacy on Hun Learning</title>
-    <link>/tags/conjugacy/</link>
+    <link>https://hun-learning94.github.io/oldblog/tags/conjugacy/</link>
     <description>Recent content in Conjugacy on Hun Learning</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 Jul 2020 06:10:00 +0900</lastBuildDate><atom:link href="/tags/conjugacy/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jul 2020 06:10:00 +0900</lastBuildDate><atom:link href="https://hun-learning94.github.io/oldblog/tags/conjugacy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Conjugate Prior for Multivariate Model</title>
-      <link>/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</link>
       <pubDate>Mon, 20 Jul 2020 06:10:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/03-conjugate-prior-for-multivariate-model/</guid>
       <description>library(ggplot2) library(cowplot) library(reshape) Multivariate Normal Model Consider a bivariate normal random variable $[y_1, y_2]^T$. The density is written as ($p=2$)
 $$ p(\mathbf{y}|\theta, \Sigma) = (\dfrac{1}{2\pi})^{-p/2}|\Sigma|^{-1/2} \exp{-\dfrac{1}{2}(\mathbf{y}-\theta)^T\Sigma^{-1}(\mathbf{y}-\theta)} $$
 where the parameter is $\theta = \begin{pmatrix} E[y_1]\\\ E[y_2] \end{pmatrix}$ and $\Sigma = \begin{pmatrix} E[y_1^2]-E[y_1]^2 &amp;amp; E[y_1y_2]-E[y_1]E[y_2]\\\
@@ -24,10 +24,10 @@ Few things worth mentioning for multivariate normal model
     
     <item>
       <title>Conjugate Prior for Univariate - Normal Model</title>
-      <link>/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</link>
       <pubDate>Mon, 20 Jul 2020 06:05:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/02-conjugate-prior-for-univariate-normal-model/</guid>
       <description>Inference for Normal Model Normal likelihood model has two parameters
 $$ p(x|\theta, \sigma^2) = \dfrac{1}{\sigma\sqrt{2\pi}}\exp(-\dfrac{1}{2}(\dfrac{x-\theta}{\sigma})^2) $$ which requires a joint prior $p(\theta, \sigma^2)$. As for a single parameter case, we have joint posterior updated as
 $$ p(\theta, \sigma^2|\mathbf{D}) \propto p(\theta, \sigma^2)p(\mathbf{D}|\theta, \sigma^2) $$ When our interest is in $\theta$, $\sigma^2$ is a nuisance parameter. Given the data $\mathbf{D}$ and the normal likelihood, we have three ways to deal with $\sigma^2$;</description>
@@ -35,10 +35,10 @@ $$ p(\theta, \sigma^2|\mathbf{D}) \propto p(\theta, \sigma^2)p(\mathbf{D}|\theta
     
     <item>
       <title>Conjugate Prior for Univariate - Poisson Model</title>
-      <link>/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</link>
+      <link>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</link>
       <pubDate>Mon, 20 Jul 2020 06:00:00 +0900</pubDate>
       
-      <guid>/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</guid>
+      <guid>https://hun-learning94.github.io/oldblog/posts/bayesian-ml/week2/01-conjugate-prior-univariate-poisson/</guid>
       <description>library(ggplot2) library(cowplot) library(reshape) Bayesian Update and Prediction Given a data $\mathbf{D}={x_1, x_2, &amp;hellip;, x_n}$, once a likelihood model $p(\mathbf{D}|\theta)$ and a prior on a parameter $p(\theta)$ are specified, Bayesian inference produces an updated belief on $\theta$.
 $$ \begin{align} \text{Prior Belief}&amp;amp;\quad p(\theta)\\\
 \text{Likelihood}&amp;amp;\quad p(\mathbf{D}|\theta)\\\
